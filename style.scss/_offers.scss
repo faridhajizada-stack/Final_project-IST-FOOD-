@@ -1,0 +1,110 @@
+@use "variables" as *;
+@use "extend" as *;
+@use "locations" as *;
+
+.aorder {
+  @extend %button;
+}
+
+.aorder:hover {
+  text-decoration: none;
+}
+.otheroffers {
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+padding: 40px;
+margin: 10px auto 0;
+
+}
+
+.main1offers {
+    height: 170vh;
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  background-size: cover;
+  background-position: center;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../images/backimage.png);
+}
+
+.burgercard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+.foodCard {
+  @extend %foodCard;
+}
+
+.Discount {
+  @extend %Discount;
+}
+
+.Like {
+  @extend %Like;
+}
+
+.Like > svg {
+  transition: all 0.3s ease;
+}
+
+.Like:hover > svg {
+  fill: rgb(190, 0, 0);
+}
+
+.Like:focus {
+  outline: none;
+}
+
+.imageContainer {
+  @extend %imageContainer;
+}
+
+.imageContainer > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  animation: rotateLogo 8500ms infinite linear 2000ms running;
+  animation-delay: 2s;
+}
+
+.imageContainer > img:hover
+{animation-play-state:paused}
+
+.foodTitle {
+  @extend %foodTitle;
+}
+
+.priceAndButton {
+  @extend %priceAndButton;
+}
+
+.Price {
+  @extend %Price;
+}
+
+.button {
+  @extend %button;
+}
+
+.button:hover {
+  box-shadow: rgb(116, 219, 160) 0px 0px 15px;
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+
+.foodTitlekebab{ color:rgb(0, 0, 0);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 200px;
+  font-weight: 800;
+  font-size: 22px;
+  padding-top: 5px;}

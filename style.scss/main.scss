@@ -1,0 +1,637 @@
+@use "variables" as *;
+@use "extend" as *;
+@use "locations" as *;
+@use "offers" as *;
+@use "order" as *;
+@use "contacts" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.menu-links {
+  color: $black;
+}
+
+.menu-links {
+  text-decoration: none;
+}
+
+.menu-links.active {
+  border-bottom: 3px solid rgb(0, 0, 0);
+}
+
+.header {
+  @extend %menu;
+  background-color: #226c13b9;
+}
+
+.nav-menu {
+  text-decoration: none;
+  font-family: cursive;
+}
+
+.menu {
+  display: flex;
+  color: $black;
+  align-items: center;
+  gap: 50px;
+  font-size: 20px;
+  font-weight: 100;
+
+}
+
+.logo {
+  width: 150px;
+  height: 130px;
+  border-radius: 20px;
+  animation: rotateLogo 2500ms ease-in-out 1000ms running;
+}
+
+@keyframes rotateLogo {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+.stronghours {
+  color: rgb(0, 0, 0);
+  font-weight: 900;
+}
+.menu-item-hours {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.menu-item-hours div {
+  display: flex;
+  flex-direction: column;
+}
+
+.rainbow-hover {
+  @extend %rainbow-hover;
+}
+
+.sp {
+  @extend %sp;
+}
+.main {
+  height: 900vh;
+  background-image: url(../images/backimage.png);
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  background-size: cover;
+  background-position: center;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../images/backimage.png);
+}
+
+.h1p {
+  @extend %h1p;
+}
+
+.h1menu {
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.pmenu {
+  font-size: 20px;
+  padding: 15px;
+}
+
+.pmenustrong {
+  color: #83ea6fb9;
+  font-weight: 900;
+}
+
+.Menu-list {
+  background-color: rgba(255, 255, 255, 0.85);
+  font-size: 30px;
+  font-family: cursive;
+  width: 100%;
+  @extend %menu;
+}
+
+.Menu-list a {
+  color: #000000b9;
+  font-size: 30px;
+}
+
+.Menu-list a:hover {
+  color: #226c13b9;
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.menu-logo {
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.allmainmenu {
+margin-top: 70px;
+}
+
+
+.Pizzas {
+padding: 10px 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.Burger {
+padding: 10px 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.Drinks
+{
+padding: 10px 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.Desserts
+{
+padding: 10px 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.Qurrito {
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+}
+
+.Kebab {
+padding: 10px 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+
+}
+.box1 {
+  @extend %box;
+}
+
+.img-box1 {
+  @extend %img-box;
+}
+
+.box2 {
+  @extend %box;
+}
+
+.img-box2 {
+  @extend %img-box;
+}
+
+.box3 {
+  @extend %box;
+}
+
+.img-box3 {
+  @extend %img-box;
+}
+
+.box4 {
+  @extend %box;
+}
+
+.img-box4 {
+  @extend %img-box;
+}
+
+.box5 {
+  @extend %box;
+}
+
+.img-box5 {
+  @extend %img-box;
+}
+
+.box6 {
+  @extend %box;
+}
+
+.img-box6 {
+  @extend %img-box;
+}
+
+.box7 {
+  @extend %box;
+}
+
+.img-box7 {
+  @extend %img-box;
+}
+
+.box8 {
+  @extend %box;
+}
+
+.img-box8 {
+  @extend %img-box;
+}
+
+.box9 {
+  @extend %box;
+}
+
+.img-box9 {
+  @extend %img-box;
+}
+
+.box10 {
+  @extend %box;
+}
+
+.img-box10 {
+  @extend %img-box;
+}
+
+.box11 {
+  @extend %box;
+}
+
+.img-box11 {
+  @extend %img-box;
+}
+
+
+.box12 {
+  @extend %box;
+}
+
+.img-box12 {
+  @extend %img-box;
+}
+
+
+.box13 {
+  @extend %box;
+}
+
+.img-box13 {
+  @extend %img-box;
+}
+
+
+.box14 {
+  @extend %box;
+}
+
+.img-box14 {
+  @extend %img-box;
+}
+
+
+.box15 {
+  @extend %box;
+}
+
+.img-box15 {
+  @extend %img-box;
+}
+
+.box16 {
+  @extend %box;
+}
+
+.img-box16 {
+  @extend %img-box;
+}
+
+.box17 {
+  @extend %box1;
+}
+
+.img-box17 {
+  @extend %img-box1;
+}
+
+.box18 {
+  @extend %box1;
+}
+
+.img-box18 {
+  @extend %img-box1;
+}
+
+.box19 {
+  @extend %box1;
+}
+
+.img-box19 {
+  @extend %img-box1;
+}
+
+
+.box20 {
+  @extend %box1;
+}
+
+.img-box20 {
+  @extend %img-box1;
+}
+
+.box21 {
+  @extend %box1;
+}
+
+.img-box21 {
+  @extend %img-box1;
+}
+
+.box22 {
+  @extend %box1;
+}
+
+.img-box22 {
+  @extend %img-box1;
+}
+
+.box23 {
+  @extend %box2;
+}
+
+.img-box23 {
+  @extend %img-box2;
+}
+
+.box24 {
+  @extend %box2;
+}
+
+.img-box24 {
+  @extend %img-box2;
+}
+
+.box25 {
+  @extend %box2;
+}
+
+.img-box25 {
+  @extend %img-box2;
+}
+
+.box26 {
+  @extend %box2;
+}
+
+.img-box26 {
+  @extend %img-box2;
+}
+
+.box27 {
+  @extend %box2;
+}
+
+.img-box27 {
+  @extend %img-box2;
+}
+
+.box28 {
+  @extend %box2;
+}
+
+.img-box28 {
+  @extend %img-box2;
+}
+
+.box29 {
+  @extend %box2;
+}
+
+.img-box29 {
+  @extend %img-box2;
+}
+
+.box30 {
+  @extend %box2;
+}
+
+.img-box30 {
+  @extend %img-box2;
+}
+
+.box31 {
+  @extend %box2;
+}
+
+.img-box31 {
+  @extend %img-box2;
+}
+
+.box32 {
+  @extend %box2;
+}
+
+.img-box32 {
+  @extend %img-box2;
+}
+
+.box33 {
+  @extend %box2;
+}
+
+.img-box33 {
+  @extend %img-box2;
+}
+.box34 {
+  @extend %box2;
+}
+
+.img-box34 {
+  @extend %img-box2;
+}
+
+
+.box35 {
+  @extend %box3;
+}
+
+.img-box35 {
+  @extend %img-box3;
+}
+.box36 {
+  @extend %box3;
+}
+
+.img-box36 {
+  @extend %img-box3;
+}
+
+.box37 {
+  @extend %box3;
+}
+
+.img-box37 {
+  @extend %img-box3;
+}
+.box38 {
+  @extend %box3;
+}
+
+.img-box38 {
+  @extend %img-box3;
+}
+.box39 {
+  @extend %box3;
+}
+
+.img-box39 {
+  @extend %img-box3;
+}
+
+.box40 {
+  @extend %box3;
+}
+
+.img-box40 {
+  @extend %img-box3;
+}
+.box41 {
+  @extend %box3;
+}
+
+.img-box41 {
+  @extend %img-box3;}
+
+  .box42 {
+  @extend %box3;
+}
+
+.img-box42 {
+  @extend %img-box3;}
+
+  .box43 {
+  @extend %box4;
+}
+
+.img-box43 {
+  @extend %img-box4;}
+
+   .box44 {
+  @extend %box4;
+}
+
+.img-box44 {
+  @extend %img-box4;}
+
+    .box45 {
+  @extend %box4;
+}
+
+.img-box45 {
+  @extend %img-box4;}
+
+.box46 {
+  @extend %box5;
+}
+
+.img-box46 {
+  @extend %img-box5;}
+
+   .box47 {
+  @extend %box5;
+}
+
+.img-box47 {
+  @extend %img-box5;}
+
+  .box48 {
+  @extend %box5;
+}
+
+.img-box48 {
+  @extend %img-box5;}
+
+
+   
+
+
+
+
+
+
+
+.h2about {
+  color: white;
+font-size: 40px;
+  font-weight: 900;
+  padding: 30px;
+  color: rgb(255, 255, 255);
+  
+}
+
+
+.aboutus {
+border-radius: 20px;
+width: 50%;
+border: 3px solid #83ea6fb9;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 30px auto;
+margin-top: 70px;
+margin-bottom:70px;
+-webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(51,175,68,0.64); 
+box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(51,175,68,0.64);
+}
+
+.paboutus {
+background-color: rgba(255, 255, 255, 0.85);
+border: 4px solid #ffffffb9;
+width: 90%;
+margin: 10px auto;
+height: 50vh;
+display: flex;
+align-content: center;
+padding: 20px;
+border-radius: 20px;
+text-align: center;
+}
+
+.pabout {
+padding: 20px;
+text-align: justify;
+font-size: 18px;
+}
+
+.strabout {
+  color: #0b4000b9;
+  text-decoration: underline;
+}
+
