@@ -635,3 +635,96 @@ font-size: 18px;
   text-decoration: underline;
 }
 
+
+@media (max-width: 768px) {
+  .logo {
+    width: 100px;
+    height: 90px;
+    margin: 0 auto;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 15px;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .menu-item-hours {
+    justify-content: center;
+    margin: 0;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .h1menu {
+    font-size: 34px;
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  .pmenu {
+    font-size: 16px;
+    padding: 15px;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .Menu-list {
+    font-size: 20px;
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .Menu-list a {
+    font-size: 22px;
+  }
+
+  .Menu-list a:hover {
+    font-size: 22px;
+  }
+
+  .Pizzas,
+  .Burger,
+  .Drinks,
+  .Desserts,
+  .Qurrito,
+  .Kebab {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .aboutus {
+    width: 95%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .paboutus {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+  }
+
+  .pabout {
+    font-size: 16px;
+    padding: 10px;
+    text-align: left;
+  }
+
+  .h2about {
+    font-size: 28px;
+    text-align: center;
+    padding: 20px 10px;
+  }
+
+  .allmainmenu {
+    margin-top: 30px;
+  }
+}
