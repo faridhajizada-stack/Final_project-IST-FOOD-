@@ -886,7 +886,8 @@ a:hover {
 }
 
 .main {
-  height: 900vh;
+  min-height: 100vh;
+  height: auto;
   background-image: url(../images/backimage.png);
   background-repeat: no-repeat;
   background-attachment: inherit;
@@ -1008,7 +1009,8 @@ a:hover {
   border: 4px solid rgba(255, 255, 255, 0.7254901961);
   width: 90%;
   margin: 10px auto;
-  height: 50vh;
+  height: auto;
+  min-height: 150px;
   display: flex;
   align-content: center;
   padding: 20px;
