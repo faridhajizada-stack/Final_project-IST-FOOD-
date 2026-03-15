@@ -8,7 +8,8 @@ justify-content: center;
 padding: 20px;}
 
 .mainorder {
-    height: 200vh;
+  margin-top: 200px;
+  height: 380px;
   background-repeat: no-repeat;
   background-attachment: inherit;
   background-size: cover;
@@ -22,15 +23,11 @@ padding: 20px;}
     padding: 30px;
 }
 
-.fieldsetform {
-    display: flex;
-    align-items: center;
-}
 
 .form {
     width: 40vw;
     height: 170vh;
-    background-color: #89c95e;
+    background-color: #4aba00;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -253,4 +250,94 @@ display: flex;
   background: #ffffff;
 }
 
+.buttonstart {
+  border-radius: 0.25rem;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 400;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: #000000;
+  -webkit-clip-path: polygon(
+    0 0,
+    0 0,
+    100% 0,
+    100% 0,
+    100% calc(100% - 15px),
+    calc(100% - 15px) 100%,
+    15px 100%,
+    0 100%
+  );
+  clip-path: polygon(
+    0 0,
+    0 0,
+    100% 0,
+    100% 0,
+    100% calc(100% - 15px),
+    calc(100% - 15px) 100%,
+    15px 100%,
+    0 100%
+  );
+  height: 60px;
+  font-size: 0.7rem;
+  line-height: 14px;
+  letter-spacing: 1.2px;
+  transition: 0.2s 0.1s;
+  background-image: linear-gradient(90deg, #3cff00, #b2d01d);
+  border: 0 solid;
+  overflow: hidden;
+}
+
+.buttonstart:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  font-weight: 600;
+  color: #000;
+  transition: all 0.1s ease-in;
+  background-image: linear-gradient(90deg, #9472e1, #6220fb);
+  padding-right: 32px;
+  padding-left: 32px;
+}
+
+.buttonstart:active {
+  opacity: 0.5;
+  transition: all 0s;
+}
+
+.form-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.6);
+  z-index: 9999;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.form-modal.active {
+  display: block;
+}
+
+.form-modal-content {
+  position: relative;
+  max-width: 800px;
+  margin: 40px auto;
+  background: rgb(89, 42, 42);
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.form-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 32px;
+  border: none;
+  color: #ffff;
+  background: transparent;
+  cursor: pointer;
+}
 

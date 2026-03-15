@@ -25,46 +25,46 @@
   </head>
 
   <body>
-    <header class="header">
-      <a class="menu-links" href="index.html"
-        ><img class="logo" src="./images/Logo.jpeg" alt="logo"
-      /></a>
+<header class="header">
+  <a class="menu-links" href="index.html">
+    <img class="logo" src="./images/Logo.jpeg" alt="logo" />
+  </a>
 
-      <nav class="nav-menu">
-        <ul class="menu">
-          <li class="menu-item-hours">
-            <div>
-              <span class="title">Opening hours</span>
-              <span class="time"
-                ><strong class="stronghours"> 10:00 – 21:00 </strong></span
-              >
-            </div>
-          </li>
-          <li class="menu-item">
-            <a class="menu-links" href="index.html#aboutus">About us</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-links" href="index.html#allmenu">Menu</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-links" href="offers.html#offers">Offers</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-links" href="contacts.html#delivery">Delivery</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-links active" href="location.html">Location</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-links" href="contacts.html#contacts">Contact</a>
-          </li>
+  <nav class="nav-menu">
+    <ul class="menu">
+  <div class="menu-item-hours">
+    <span class="title">Opening hours:</span>
+    <span class="time"><strong class="stronghours">10:00 – 21:00</strong></span>
+  </div>
 
-          <button data-label="Register" class="rainbow-hover">
-            <span class="sp"><a href="order.html">Order</a></span>
-          </button>
-        </ul>
-      </nav>
-    </header>
+   
+      <li class="menu-item">
+        <a class="menu-links" href="index.html#aboutus">About us</a>
+      </li>
+      <li class="menu-item">
+        <a class="menu-links" href="index.html#allmenu">Menu</a>
+      </li>
+      <li class="menu-item">
+        <a class="menu-links" href="offers.html#offers">Offers</a>
+      </li>
+      <li class="menu-item">
+        <a class="menu-links" href="contacts.html">Delivery</a>
+      </li>
+      <li class="menu-item">
+        <a class="menu-links" href="location.html">Location</a>
+      </li>
+      <li class="menu-item">
+        <a class="menu-links" href="contacts.html">Contact</a>
+      </li>
+      <li class="menu-item menu-item-btn">
+        <button data-label="Register" class="rainbow-hover">
+          <span class="sp"><a href="order.html">Order</a></span>
+        </button>
+      </li>
+    </ul>
+  </nav>
+</header>
+
 
     <main class="main1loc">
       <div class="h1loc">
@@ -159,5 +159,77 @@
         </div>
       </div>
     </main>
+    
+<footer class="footer">
+
+  <h2 class="h2foot"> How To Find Us</h2>
+
+
+               <div class="Footercontact">
+                <div class="contact1" >
+                  <ul class="contact01">
+                    <li>Call: </br> +420774524554</a></li>
+                    <li>Email us: </br> istfoodkebab@gmail.com</a></li>
+                    </ul>
+              </div>
+
+               <div class="contact2">
+                  <div><a href="https://www.instagram.com/ist.food.kebab/" target="_blank"><img class="footerimg" src="./images/insta.webp" alt="instagram"></a>
+                  <span class="delivery-name"></span> </div>
+          <div ><a href="https://www.instagram.com/ist.food.kebab/" target="_blank"><img class="footerimg" src="./images/facebook.webp" alt="facebook"></a>
+                  <span class="delivery-name"></span> </div>
+              </div>
+
+               <div class="contact2">
+                   <ul >
+                    <li>Plzeňská 59, Králův Dvůr </li> 
+                    <li>Plzeňská 67, Králův Dvůr </li> 
+                    <li>Plzeňská 341/52, Beroun</li> 
+                    <li>Husovo nám. 10, Hostivice</li> 
+                    </ul>
+              </div>
+              </div>
+
+              </div>
+</footer>
+
+ <script>
+  const hamburger = document.querySelector('.hamburger');
+  const menu = document.querySelector('.menu');
+
+  if (hamburger && menu) {
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      menu.classList.toggle('active');
+      document.body.classList.toggle('menu-open');
+    });
+
+    document.querySelectorAll('.menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        menu.classList.remove('active');
+        document.body.classList.remove('menu-open');
+      });
+    });
+
+    document.addEventListener('click', (e) => {
+      const isClickInsideNav = e.target.closest('.nav-menu');
+      if (!isClickInsideNav && menu.classList.contains('active')) {
+        hamburger.classList.remove('active');
+        menu.classList.remove('active');
+        document.body.classList.remove('menu-open');
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        hamburger.classList.remove('active');
+        menu.classList.remove('active');
+        document.body.classList.remove('menu-open');
+      }
+    });
+  }
+</script>
+
   </body>
 </html>

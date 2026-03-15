@@ -62,13 +62,24 @@
   -webkit-box-shadow: 2px 5px 10px 2px rgba(212, 165, 44, 0.75);
   -moz-box-shadow: 2px 5px 10px 2px rgba(212, 165, 44, 0.75);}
 
+    %img-box6 {
+
+  border-radius: 30px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  background-color: white;
+  border: 2px solid rgb(178, 104, 8);
+  box-shadow: 2px 5px 10px 2px rgba(212, 165, 44, 0.75);
+  -webkit-box-shadow: 2px 5px 10px 2px rgba(212, 165, 44, 0.75);
+  -moz-box-shadow: 2px 5px 10px 2px rgba(212, 165, 44, 0.75);}
 
 %box {
   padding: 25px;
   width: 600px;
   border: 2px solid black;
   border-radius: 30px;
-  background-color: rgb(142, 62, 62);
+  background-color: rgb(75, 78, 12);;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,7 +90,7 @@
   width: 600px;
   border: 2px solid black;
   border-radius: 30px;
-  background-color: rgb(75, 78, 12);
+  background-color: rgb(142, 62, 62);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -129,6 +140,16 @@
   align-items: center;
 } 
 
+%box6 {
+  padding: 25px;
+  width: 600px;
+  border: 2px solid black;
+  border-radius: 30px;
+  background-color: rgb(180, 137, 10);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
 %rainbow-hover {
   font-size: 16px;
   font-weight: 700;
@@ -281,12 +302,15 @@
 }
 
 %menu {
-  height: 25vh;
-  padding: 20px;
+  height: 200px;
+  padding: 30px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: space-between;
+
+
+
+  
 }
 
 

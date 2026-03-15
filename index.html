@@ -6,11 +6,7 @@
     
     <title>IST FOOD.CZ</title>
     <link rel="stylesheet" href="./css/main.css" />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
-      rel="stylesheet"
-    />
+   
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -21,52 +17,52 @@
 
 
   </head>
+<header class="header">
+  <a class="menu-links" href="index.html">
+    <img class="logo" src="./images/Logo.jpeg" alt="logo" />
+  </a>
 
+  <nav class="nav-menu">
+    <ul class="menu">
+  <div class="menu-item-hours">
+    <span class="title">Opening hours:</span>
+    <span class="time"><strong class="stronghours">10:00 – 21:00</strong></span>
+  </div>
+
+   
+      <li class="menu-item">
+        <a class="menu-links" href="index.html#aboutus">About us</a>
+      </li>
+      <li class="menu-item">
+        <a class="menu-links" href="index.html#allmenu">Menu</a>
+      </li>
+      <li class="menu-item">
+        <a class="menu-links" href="offers.html#offers">Offers</a>
+      </li>
+      <li class="menu-item">
+        <a class="menu-links" href="contacts.html">Delivery</a>
+      </li>
+      <li class="menu-item">
+        <a class="menu-links" href="location.html">Location</a>
+      </li>
+      <li class="menu-item">
+        <a class="menu-links" href="contacts.html">Contact</a>
+      </li>
+      <li class="menu-item menu-item-btn">
+        <button data-label="Register" class="rainbow-hover">
+          <span class="sp"><a href="order.html">Order</a></span>
+        </button>
+      </li>
+    </ul>
+  </nav>
+</header>
   <body>
-    <header class="header">
-      <a class="menu-links" href="index.html"
-        ><img class="logo" src="./images/Logo.jpeg" alt="logo"
-      /></a>
 
-      <nav class="nav-menu">
-        <ul class="menu">
-         
-          <li class="menu-item-hours">
-            <div>
-              <span class="title">Opening hours</span>
-              <span class="time"><strong class="stronghours"> 10:00 – 21:00 </strong></span>
-            </div>
-          </li>
-          <li class="menu-item">
-            <a class="menu-links active" href="index.html#aboutus">About us</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-links active" href="index.html#allmenu">Menu</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-links" href="offers.html#offers">Offers</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-links" href="contacts.html#delivery">Delivery</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-links" href="location.html">Location</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-links" href="contacts.html#contacts">Contact</a>
-          </li>
-
-          <button data-label="Register" class="rainbow-hover">
-            <span class="sp"><a href="order.html">Order</a></span>
-          </button>
-        </ul>
-      </nav>
-    </header>
 
     <main class="main">
-      <div class="h1p">
+      <div class="h1p" id="allmenu">
         <h1 class="h1menu">Choose Your Favorite Food</h1>
-        <p class="pmenu">
+        <p class="pmenu" >
           Explore our delicious selection of freshly prepared meals and discover
           your favorite dish. Our menu offers a variety of tasty options
           including crispy pizzas made with fresh ingredients, flavorful
@@ -80,820 +76,1091 @@
         </p>
       </div>
 
-      <div class="all-menu" id="allmenu">
-        <ul class="Menu-list">
-
-        <li class="menu-list">
-          <a class="menulist2" href="#Pizzas-list"
-            ><img class="menu-logo" src="./icons/pizza.png" alt="pizza" />Pizza</a
-          >
-        </li>
-
-
-        <li class="menu-list">
-          <a class="menulist2" href="#Burger-list"><img class="menu-logo" src="./icons/burger.png" alt="burger" />Burgers</a>
-        </li>
-
-    
-         <li class="menu-list">
-          <a class="menulist2" href="#Kebab-list"><img class="menu-logo" src="./icons/kebab.png" alt="kebab" />Kebab</a>
-        </li>
-
-     
-         <li class="menu-list">
-          <a class="menulist2" href="#Drinks-list"><img class="menu-logo" src="./icons/softdrink.png" alt="Drinks" />Drinks</a>
-        </li>
-
-         <li class="menu-list">
-          <a class="menulist2" href="#Desserts-list"><img class="menu-logo" src="./icons/desert.png" alt="Desserts" />Desserts</a>
-        </li>
-
-       
-</ul>
-      </div>
-
-       <div class="all-menu" id="allmenu">
-        <ul class="Menu-list">
-
-        <li class="menu-list">
-          <a class="menulist2" href="#Qurrito-list"
-            ><img class="menu-logo" src="./icons/qurrito.png" alt="QURRITO" />Qurrito</a
-          >
-        </li>
+ 
+<div class="all-menu">
+  <ul class="Menu-list">
+    <li class="menu-list">
+      <a class="menulist2" href="#Pizzas-list"
+        ><img class="menu-logo" src="./icons/pizza.png" alt="pizza" loading="lazy" />Pizza</a
+      >
+    </li>
+    <li class="menu-list">
+      <a class="menulist2" href="#Burger-list"><img class="menu-logo" src="./icons/burger.png" alt="burger" loading="lazy" />Burgers</a>
+    </li>
+    <li class="menu-list">
+      <a class="menulist2" href="#Kebab-list"><img class="menu-logo" src="./icons/kebab.png" alt="kebab" loading="lazy" />Kebab</a>
+    </li>
+    <li class="menu-list">
+      <a class="menulist2" href="#Drinks-list"><img class="menu-logo" src="./icons/softdrink.png" alt="Drinks" loading="lazy" />Drinks</a>
+    </li>
+    <li class="menu-list">
+      <a class="menulist2" href="#Desserts-list"><img class="menu-logo" src="./icons/desert.png" alt="Desserts" loading="lazy" />Desserts</a>
+    </li>
+  </ul>
+</div>
 
 
-        <li class="menu-list">
-          <a class="menulist2" href="#Salads-list"><img class="menu-logo" src="./icons/salads.png" alt="salads" />Salads</a>
-        </li>
+  <ul class="Menu-list">
+    <li class="menu-list">
+      <a class="menulist2" href="#Qurrito-list"
+        ><img class="menu-logo" src="./icons/qurrito.png" alt="QURRITO" loading="lazy" />Qurrito</a
+      >
+    </li>
+    <li class="menu-list">
+      <a class="menulist2" href="#Salads-list"><img class="menu-logo" src="./icons/salads.png" alt="salads" loading="lazy" />Salads</a>
+    </li>
+    <li class="menu-list">
+      <a class="menulist2" href="#Grilled-list"><img class="menu-logo" src="./icons/grilledmeat.png" alt="grilledmeat" loading="lazy" />Grilled meat</a>
+    </li>
+    <li class="menu-list">
+      <a class="menulist2" href="#Vegeterian-list"><img class="menu-logo" src="./icons/vegeterian.png" alt="vegeterian" loading="lazy" />Vegeterian</a>
+    </li>
+    <li class="menu-list">
+      <a class="menulist2" href="#Kidsmenu-list"><img class="menu-logo" src="./icons/kids.png" alt="kidsmenu" loading="lazy" />Kid's menu</a>
+    </li>
+  </ul>
+</div>
 
-    
-         <li class="menu-list">
-          <a class="menulist2" href="#Grilledmeat-list"><img class="menu-logo" src="./icons/grilledmeat.png" alt="grilledmeat" />Grilled meat</a>
-        </li>
 
-     
-         <li class="menu-list">
-          <a class="menulist2" href="#Drinks-list"><img class="menu-logo" src="./icons/vegeterian.png" alt="vegeterian" />Vegeterian</a>
-        </li>
 
-         <li class="menu-list">
-          <a class="menulist2" href="#Desserts-list"><img class="menu-logo" src="./icons/kids.png" alt="kidsmenu" />Kid's menu</a>
-        </li>
 
-       
-</ul>
-      </div>
+<div class="allmainmenu">
+<div class="Pizzas" id="Pizzas-list">
+  <div class="box1">
+    <a
+      href="./images/pepperoni.avif"
+      class="glightbox"
+      data-glightbox="title: Pizza PEPPERONI; description:Size: 32cm = 180 CZK / Size: 45cm = 280 CZK -------- Ingredients: Tomato base, Oregano, Mozzarella, Salam "
+    >
+      <img
+        class="img-box1"
+        src="./images/pepperoni.avif"
+        alt="Pizza PEPPERONI"
+        loading="lazy"
+      />
+    </a>
+  </div>
 
-      
-          <div class="allmainmenu">
+  <div class="box2">
+    <a
+      href="./images/margarita.avif"
+      class="glightbox"
+      data-glightbox="title: Pizza MARGHERITA; description:Size: 32cm = 160 CZK / Size: 45cm = 260 CZK -------- Ingredients: Tomato Base, Mozzarella, Fresh Basil"
+    >
+      <img
+        class="img-box2"
+        src="./images/margarita.avif"
+        alt="Pizza MARGHERITA"
+        loading="lazy"
+      />
+    </a>
+  </div>
 
-            <div class="Pizzas" id="Pizzas-list">
-              <div class="box1">
-                <a
-                  href="./images/pepperoni.avif"
-                  class="glightbox"
-                  data-glightbox="title: Pizza PEPPERONI; description:Size: 32cm = 180 CZK / Size: 45cm = 280 CZK -------- Ingredients: Tomato base, Oregano, Mozzarella, Salam ">
+  <div class="box3">
+    <a
+      href="./images/sampinionpizza.avif"
+      class="glightbox"
+      data-glightbox="title: Pizza SAMPINION; description:Size: 32cm = 185 CZK / Size: 45cm = 285 CZK -------- Ingredients: Tomato Base, Mozzarella, Mushrooms, Oregano, Chicken Ham, Arugula "
+    >
+      <img
+        class="img-box3"
+        src="./images/sampinionpizza.avif"
+        alt="Pizza Sampinion"
+        loading="lazy"
+      />
+    </a>
+  </div>
 
-                  <img
-                    class="img-box1"
-                    src="./images/pepperoni.avif"
-                    alt="Pizza PEPPERONI"
-                  />
-                </a>
+  <div class="box4">
+    <a
+      href="./images/cinquepizza.avif"
+      class="glightbox"
+      data-glightbox="title: Pizza CINQUE; description:Size: 32cm = 195 CZK / Size: 45cm = 295 CZK -------- Ingredients: Cream Base, Mozzarella, Niva, Grana Padano, Cheddar, Hermelín"
+    >
+      <img
+        class="img-box4"
+        src="./images/cinquepizza.avif"
+        alt="Pizza Cinque"
+        loading="lazy"
+      />
+    </a>
+  </div>
+</div>
+
+<div class="Pizzas">
+  <div class="box5">
+    <a
+      href="./images/vegetpizza.avif"
+      class="glightbox"
+      data-glightbox="title: Pizza VEGETERIANA; description:Size: 32cm = 180 CZK / Size: 45cm = 280 CZK -------- Ingredients: Tomato Base, Mozzarella, Bell Pepper, Olives, Mushrooms, Cherry Tomatoes, Red Onion, Oregano"
+    >
+      <img
+        class="img-box5"
+        src="./images/vegetpizza.avif"
+        alt="Pizza Vegeterian"
+        loading="lazy"
+      />
+    </a>
+  </div>
+
+  <div class="box6">
+    <a
+      href="./images/chickendeluxe.avif"
+      class="glightbox"
+      data-glightbox="title: Pizza CHICKEN DELUXE; description:Size: 32cm = 190 CZK / Size: 45cm = 290 CZK -------- Ingredients: Tomato Base, Mozzarella, Cheddar, Chicken, Olives, Red Onion, Mushrooms, Oregano"
+    >
+      <img
+        class="img-box6"
+        src="./images/chickendeluxe.avif"
+        alt="Pizza Chicken Deluxe"
+        loading="lazy"
+      />
+    </a>
+  </div>
+
+  <div class="box7">
+    <a
+      href="./images/polopizza.avif"
+      class="glightbox"
+      data-glightbox="title: Pizza POLLO; description:Size: 32cm = 190 CZK / Size: 45cm = 290 CZK -------- Ingredients: Tomato Base, Mozzarella, Chicken, Spinach, Tomato, Corn"
+    >
+      <img
+        class="img-box7"
+        src="./images/polopizza.avif"
+        alt="Pizza Pollo"
+        loading="lazy"
+      />
+    </a>
+  </div>
+
+  <div class="box8">
+    <a
+      href="./images/bbqpizza.avif"
+      class="glightbox"
+      data-glightbox="title: Pizza BBQ; description:Size: 32cm = 180 CZK / Size: 45cm = 280 CZK -------- Ingredients: Tomato Base, Mozzarella, Chicken, Red Onion, BBQ Sauce"
+    >
+      <img
+        class="img-box8"
+        src="./images/bbqpizza.avif"
+        alt="Pizza BQQ"
+        loading="lazy"
+      />
+    </a>
+  </div>
+</div>
+
+<div class="Pizzas">
+  <div class="box9">
+    <a
+      href="./images/Donerpizza.avif"
+      class="glightbox"
+      data-glightbox="title: Pizza DONER; description: Size: 32cm = 195 CZK / Size: 45cm = 295 CZK -------- Ingredients: Tomato Base, Mozzarella, Chicken Kebab, Red Onion, Olives, Bell Pepper, Egg"
+    >
+      <img
+        class="img-box9"
+        src="./images/Donerpizza.avif"
+        alt="Pizza Doner"
+        loading="lazy"
+      />
+    </a>
+  </div>
+
+  <div class="box10">
+    <a
+      href="./images/BALKANRAJPIZZA.avif"
+      class="glightbox"
+      data-glightbox="title: Pizza BALKANSKY RAJ; description: Size: 32cm = 185 CZK / Size: 45cm = 285 CZK -------- Ingredients: Tomato Base, Mozzarella, Balkan Cheese, Chili Peppers, Bell Pepper, Olives, Pastrami, Salami, Turkish Sausage, Oregano"
+    >
+      <img
+        class="img-box10"
+        src="./images/BALKANRAJPIZZA.avif"
+        alt="Pizza BALKANRAJ"
+        loading="lazy"
+      />
+    </a>
+  </div>
+
+  <div class="box11">
+    <a
+      href="./images/DIAVOLA.avif"
+      class="glightbox"
+      data-glightbox="title: Pizza DIAVOLA; description: Size: 32cm = 190 CZK / Size: 45cm = 290 CZK -------- Ingredients: Tomato Base, Mozzarella, Chorizo Sausage, Chili Peppers, Red Onion, Jalapeños"
+    >
+      <img
+        class="img-box11"
+        src="./images/DIAVOLA.avif"
+        alt="Pizza DIAVOLA"
+        loading="lazy"
+      />
+    </a>
+  </div>
+
+  <div class="box12">
+    <a
+      href="./images/SPENATOVA.avif"
+      class="glightbox"
+      data-glightbox="title: Pizza SPENATOVA; description: Size: 32cm = 180 CZK / Size: 45cm = 280 CZK -------- Ingredients: Cream Base, Mozzarella, Niva, Spinach Pesto"
+    >
+      <img
+        class="img-box12"
+        src="./images/SPENATOVA.avif"
+        alt="Pizza SPENATOVA"
+        loading="lazy"
+      />
+    </a>
+  </div>
+</div>
+
+<div class="Pizzas">
+  <div class="box13">
+    <a
+      href="./images/ISTPIZZA.avif"
+      class="glightbox"
+      data-glightbox="title: Pizza IST; description: Size: 32cm = 185 CZK / Size: 45cm = 285 CZK -------- Ingredients: Tomato Base, Mozzarella, Corn, Turkish Sausage, Olives, Red Onion"
+    >
+      <img
+        class="img-box13"
+        src="./images/ISTPIZZA.avif"
+        alt="Pizza IST"
+        loading="lazy"
+      />
+    </a>
+  </div>
+
+  <div class="box14">
+    <a
+      href="./images/tonno.avif"
+      class="glightbox"
+      data-glightbox="title: Pizza TONNO; description: Size: 32cm = 185 CZK / Size: 45cm = 285 CZK -------- Ingredients: Tomato Base, Mozzarella, Red Onion, Tonno fish, Olives, Corn"
+    >
+      <img
+        class="img-box14"
+        src="./images/tonno.avif"
+        alt="Pizza TONNO"
+        loading="lazy"
+      />
+    </a>
+  </div>
+
+  <div class="box15">
+    <a
+      href="./images/Mexicano.avif"
+      class="glightbox"
+      data-glightbox="title: Pizza MEXICANO; description: Size: 32cm = 190 CZK / Size: 45cm = 290 CZK -------- Ingredients: Tomato Base, Mozzarella, Cheddar, Chorizo Sausage, Corn, Beans, Red Onion, Tomatoes, Jalapeños"
+    >
+      <img
+        class="img-box15"
+        src="./images/Mexicano.avif"
+        alt="Pizza MEXICANO"
+        loading="lazy"
+      />
+    </a>
+  </div>
+
+  <div class="box16">
+    <a
+      href="./images/PASTRAMI.avif"
+      class="glightbox"
+      data-glightbox="title: Pizza PASTRAMI; description: Size: 32cm = 190 CZK / Size: 45cm = 290 CZK -------- Ingredients: Cream Base, Mozzarella, Cheddar, Pickles, Pastrami, Caramelized Onion"
+    >
+      <img
+        class="img-box16"
+        src="./images/PASTRAMI.avif"
+        alt="Pizza PASTRAMI"
+        loading="lazy"
+      />
+    </a>
+  </div>
+</div>
+
+<div class="Burger" id="Burger-list">
+  <div class="box17">
+    <a
+      href="./images/bbgburger.avif"
+      class="glightbox"
+      data-glightbox="title: BBQ Burger; description: Price: 195 CZK / Menu (fries+drink): 255 CZK -------- Ingredients: (350 grams) beef, Lollo Rosso salad, cheddar, pickled cucumber, onion rings, arugula, red onion, sauce"
+    >
+      <img
+        class="img-box17"
+        src="./images/bbgburger.avif"
+        alt="bbgburger"
+        loading="lazy"
+      />
+    </a>
+  </div>
+
+  <div class="box18">
+    <a
+      href="./images/cheeseburger.avif"
+      class="glightbox"
+      data-glightbox="title: Cheeseburger; description: Price: 185 CZK / Menu (fries+drink): 245 CZK -------- Ingredients: (350 grams) beef, Lollo Rosso salad, cheddar, tomato, pickle, caramelized onion, roasted onion, sauce"
+    >
+      <img
+        class="img-box18"
+        src="./images/cheeseburger.avif"
+        alt="cheeseburger"
+        loading="lazy"
+      />
+    </a>
+  </div>
+
+  <div class="box19">
+    <a
+      href="./images/samuraiburger.avif"
+      class="glightbox"
+      data-glightbox="title: Samurai Burger; description: Price: 190 CZK / Menu (fries+drink): 250 CZK -------- Ingredients: (350 grams) beef, Lollo Rosso salad, cheddar, tomato, onion rings, jalapeños, red onion, sauce"
+    >
+      <img
+        class="img-box19"
+        src="./images/samuraiburger.avif"
+        alt="Samurai burger"
+        loading="lazy"
+      />
+    </a>
+  </div>
+</div>
+
+<div class="Burger">
+  <div class="box20">
+    <a
+      href="./images/chickenburger.avif"
+      class="glightbox"
+      data-glightbox="title: Chicken Burger; description: Price: 170 CZK / Menu (fries+drink): 230 CZK -------- Ingredients: (300 grams) chicken fillet, Lollo Rosso salad, pickled cucumber, red onion, sauce"
+    >
+      <img
+        class="img-box20"
+        src="./images/chickenburger.avif"
+        alt="chickenburger"
+        loading="lazy"
+      />
+    </a>
+  </div>
+
+  <div class="box21">
+    <a
+      href="./images/zampburger.avif"
+      class="glightbox"
+      data-glightbox="title: Zamp Burger; description: Price: 195 CZK / Menu (fries+drink): 255 CZK -------- Ingredients: (350 grams) beef, Lollo Rosso salad, cheddar, pickled cucumber, onion rings, zampinion, red onion, sauce"
+    >
+      <img
+        class="img-box21"
+        src="./images/zampburger.avif"
+        alt="zampburger"
+        loading="lazy"
+      />
+    </a>
+  </div>
+
+  <div class="box22">
+    <a
+      href="./images/bluecheeseburger.avif"
+      class="glightbox"
+      data-glightbox="title: Cheeseburger; description: Price: 195 CZK / Menu (fries+drink): 255 CZK -------- Ingredients: (350 grams) beef, Lollo Rosso salad, niva, tomato, pickle, caramelized onion, roasted onion, sauce"
+    >
+      <img
+        class="img-box22"
+        src="./images/bluecheeseburger.avif"
+        alt="bluecheeseburger"
+        loading="lazy"
+      />
+    </a>
+  </div>
+</div>
+
+<div class="Kebab" id="Kebab-list">
+  <div class="box23">
+    <a
+      href="./images/chleba.avif"
+      class="glightbox"
+      data-glightbox="title: Kebab in Bread; description: Price - 400gr: 140 CZK / 550gr: 155 CZK -------- Ingredients: Meat, Vegetables and Sauce"
+    >
+      <img
+        class="img-box23"
+        src="./images/chleba.avif"
+        alt="chleba"
+        loading="lazy"
+      />
+    </a>
+  </div>
+
+  <div class="box24">
+    <a
+      href="./images/chlebapendir.avif"
+      class="glightbox"
+      data-glightbox="title: Kebab in Bread with Cheese; description: Price - 420gr: 155 CZK / 570gr: 170 CZK -------- Ingredients: Meat, Cheese, Vegetables and Sauce"
+    >
+      <img
+        class="img-box24"
+        src="./images/chlebapendir.avif"
+        alt="chlebapendir.avif"
+        loading="lazy"
+      />
+    </a>
+  </div>
+
+  <div class="box25">
+    <a
+      href="./images/chlebaspecial.avif"
+      class="glightbox"
+      data-glightbox="title: Special Kebab in Bread; description: Price - 350gr: 180 CZK -------- Ingredients: Meat and Sauce"
+    >
+      <img
+        class="img-box25"
+        src="./images/chlebaspecial.avif"
+        alt="chlebaspecial"
+        loading="lazy"
+      />
+    </a>
+  </div>
+
+  <div class="box26">
+    <a
+      href="./images/tortilla.avif"
+      class="glightbox"
+      data-glightbox="title: Kebab in Tortilla ; description: Price - 450gr: 145 CZK / 600gr: 170 CZK -------- Ingredients: Meat, Vegetables and Sauce"
+    >
+      <img
+        class="img-box26"
+        src="./images/tortilla.avif"
+        alt="Tortilla"
+        loading="lazy"
+      />
+    </a>
+  </div>
+</div>
+
+<div class="Kebab">
+  <div class="box27">
+    <a
+      href="./images/tortillapendir.avif"
+      class="glightbox"
+      data-glightbox="title: Kebab in Tortilla with Cheese ; description: Price - 470gr: 160 CZK / 620gr: 180 CZK -------- Ingredients: Meat, Cheese, Vegetables and Sauce"
+    >
+      <img
+        class="img-box27"
+        src="./images/tortillapendir.avif"
+        alt="tortillapendir"
+        loading="lazy"
+      />
+    </a>
+  </div>
+
+  <div class="box28">
+    <a
+      href="./images/tortillaherm.avif"
+      class="glightbox"
+      data-glightbox="title: Kebab in Tortilla with Hermelin ; description: Price - 550gr: 180 CZK -------- Ingredients: Meat, Hermelin, Vegetables and Sauce"
+    >
+      <img
+        class="img-box28"
+        src="./images/tortillaherm.avif"
+        alt="tortillaherm"
+        loading="lazy"
+      />
+    </a>
+  </div>
+
+  <div class="box29">
+    <a
+      href="./images/tortspec.avif"
+      class="glightbox"
+      data-glightbox="title: Special Kebab in Tortilla ; description: Price - 450gr: 190 CZK -------- Ingredients: Meat and Sauce"
+    >
+      <img
+        class="img-box29"
+        src="./images/tortspec.avif"
+        alt="tortspec"
+        loading="lazy"
+      />
+    </a>
+  </div>
+
+  <div class="box30">
+    <a
+      href="./images/tortillastrips.avif"
+      class="glightbox"
+      data-glightbox="title: Strips in Tortilla; description: Price - 500gr: 145 CZK -------- Ingredients: 3x Strips, Vegetables and Sauce"
+    >
+      <img
+        class="img-box30"
+        src="./images/tortillastrips.avif"
+        alt="tortillastrips"
+        loading="lazy"
+      />
+    </a>
+  </div>
+</div>
+
+<div class="Kebab">
+  <div class="box31">
+    <a
+      href="./images/talirkebab.avif"
+      class="glightbox"
+      data-glightbox="title: Kebab in Plate ; description: Price - 400gr: 150 CZK / 550gr: 175 CZK -------- Ingredients: Meat, Vegetables, Sauce and Bread/Fries/Rice"
+    >
+      <img
+        class="img-box31"
+        src="./images/talirkebab.avif"
+        alt="Talirkebab"
+        loading="lazy"
+      />
+    </a>
+  </div>
+
+  <div class="box32">
+    <a
+      href="./images/stripstalir.avif"
+      class="glightbox"
+      data-glightbox="title: Strips in Plate ; description: Price - 400gr: 150 CZK / 550gr: 175 CZK -------- Ingredients: 4x Strips, Vegetables, Sauce and Bread/Fries/Rice"
+    >
+      <img
+        class="img-box32"
+        src="./images/stripstalir.avif"
+        alt="stripstalir"
+        loading="lazy"
+      />
+    </a>
+  </div>
+
+  <div class="box33">
+    <a
+      href="./images/kebabbox.avif"
+      class="glightbox"
+      data-glightbox="title: Kebab Box; description: Price - 350gr: 115 CZK / 450gr: 140 CZK -------- Ingredients: Meat, Vegetables, Sauce and Fries"
+    >
+      <img
+        class="img-box33"
+        src="./images/kebabbox.avif"
+        alt="kebabbox"
+        loading="lazy"
+      />
+    </a>
+  </div>
+
+  <div class="box34">
+    <a
+      href="./images/boxspecial.avif"
+      class="glightbox"
+      data-glightbox="title: Special Box Kebab; description: Price - 300gr: 180 CZK -------- Ingredients: Meat and Sauce"
+    >
+      <img
+        class="img-box34"
+        src="./images/boxspecial.avif"
+        alt="boxspecial"
+        loading="lazy"
+      />
+    </a>
+  </div>
+</div>
+
+<div class="Drinks" id="Drinks-list">
+  <div class="box35">
+    <a
+      href="./images/cola.avif"
+      class="glightbox"
+      data-glightbox="title: Cola/Cola Zero 0.5l ; description: Price - 45 CZK"
+    >
+      <img
+        class="img-box35"
+        src="./images/cola.avif"
+        alt="Cola"
+        loading="lazy"
+      />
+    </a>
+  </div>
+
+  <div class="box36">
+    <a
+      href="./images/colabank.avif"
+      class="glightbox"
+      data-glightbox="title: Cola/Cola Zero 0.33l ; description: Price - 35 CZK"
+    >
+      <img
+        class="img-box36"
+        src="./images/colabank.avif"
+        alt="stripstalir"
+        loading="lazy"
+      />
+    </a>
+  </div>
+
+  <div class="box37">
+    <a
+      href="./images/fantaexotic.avif"
+      class="glightbox"
+      data-glightbox="title: Fanta Exotic 0.33l ; description: Price - 35 CZK"
+    >
+      <img
+        class="img-box37"
+        src="./images/fantaexotic.avif"
+        alt="fantaexotic"
+        loading="lazy"
+      />
+    </a>
+  </div>
+
+  <div class="box38">
+    <a
+      href="./images/fanta05.avif"
+      class="glightbox"
+      data-glightbox="title: Fanta 0.5l ; description: Price - 45 CZK"
+    >
+      <img
+        class="img-box38"
+        src="./images/fanta05.avif"
+        alt="Fanta"
+        loading="lazy"
+      />
+    </a>
+  </div>
+</div>
+
+<div class="Drinks">
+  <div class="box39">
+    <a
+      href="./images/water.avif"
+      class="glightbox"
+      data-glightbox="title: Normal/Sparkling Water ; description: Price - 25 CZK"
+    >
+      <img
+        class="img-box39"
+        src="./images/water.avif"
+        alt="water"
+        loading="lazy"
+      />
+    </a>
+  </div>
+
+  <div class="box40">
+    <a
+      href="./images/multivitamin.avif"
+      class="glightbox"
+      data-glightbox="title: Strawberr/Multivitamin Cappy; description: Price - 45 CZK"
+    >
+      <img
+        class="img-box40"
+        src="./images/multivitamin.avif"
+        alt="multivitamin"
+        loading="lazy"
+      />
+    </a>
+  </div>
+
+  <div class="box41">
+    <a
+      href="./images/monster.avif"
+      class="glightbox"
+      data-glightbox="title: Lewis Hamilton, Zero, Mango 0.5l; description: Price - 55 CZK"
+    >
+      <img
+        class="img-box41"
+        src="./images/monster.avif"
+        alt="kebabbox"
+        loading="lazy"
+      />
+    </a>
+  </div>
+
+  <div class="box42">
+    <a
+      href="./images/beer.avif"
+      class="glightbox"
+      data-glightbox="title: Beer - Kozel, Plsner 0.3l / 0.5l; description: Price - 55/75 CZK"
+    >
+      <img
+        class="img-box42"
+        src="./images/beer.avif"
+        alt="boxspecial"
+        loading="lazy"
+      />
+    </a>
+  </div>
+</div>
+
+<div class="Desserts" id="Desserts-list">
+  <div class="box43">
+    <a
+      href="./images/baklava1.avif"
+      class="glightbox"
+      data-glightbox="title: Pistachio Baklava; description: Price: 40 CZK / 1 piece (40gr) -------- Ingredients: Baklava is made from very thin sheets of filo pastry, usually filled with various kinds of nuts and soaked in a sweet honey syrup."
+    >
+      <img
+        class="img-box43"
+        src="./images/baklava1.avif"
+        alt="baklava"
+        loading="lazy"
+      />
+    </a>
+  </div>
+
+  <div class="box44">
+    <a
+      href="./images/baklava3.avif"
+      class="glightbox"
+      data-glightbox="title: Extra Pistachio Baklava; description: Price: 50 CZK / 1 piece. (45gr) -------- Ingredients: Baklava is made from very thin sheets of filo pastry, usually filled with various kinds of nuts and soaked in a sweet honey syrup."
+    >
+      <img
+        class="img-box44"
+        src="./images/baklava3.avif"
+        alt="baklava"
+        loading="lazy"
+      />
+    </a>
+  </div>
+
+  <div class="box45">
+    <a
+      href="./images/baklava2.avif"
+      class="glightbox"
+      data-glightbox="title: Sunburst Baklava; description: Price: 100 CZK / 1 piece. (80gr) -------- Ingredients: Baklava is made from very thin sheets of filo pastry, usually filled with various kinds of nuts and soaked in a sweet honey syrup."
+    >
+      <img
+        class="img-box45"
+        src="./images/baklava2.avif"
+        alt="baklava"
+        loading="lazy"
+      />
+    </a>
+  </div>
+</div>
+
+<div class="Qurrito" id="Qurrito-list">
+  <div class="box46">
+    <a
+      href="./images/qurrito.avif"
+      class="glightbox"
+      data-glightbox="title: Qurrito (350gr); description: Price: 150 CZK -------- Ingredients: 3x Chicken Strips, Grated Edam Cheese, Grated Cheddar, Cheddar Tortilla, BBQ Sauce"
+    >
+      <img
+        class="img-box46"
+        src="./images/qurrito.avif"
+        alt="qurrito"
+        loading="lazy"
+      />
+    </a>
+  </div>
+
+  <div class="box47">
+    <a
+      href="./images/qurrito-menu.png"
+      class="glightbox"
+      data-glightbox="title: Qurrito + Fries + Drink (450gr); description: Price: 190 CZK -------- Ingredients: 3x Chicken Strips, Grated Edam Cheese, Grated Cheddar, Cheddar Tortilla, BBQ Sauce"
+    >
+      <img
+        class="img-box47"
+        src="./images/qurrito-menu.png"
+        alt="qurrito menu"
+        loading="lazy"
+      />
+    </a>
+  </div>
+
+  <div class="box48">
+    <a
+      href="./images/qurdel.webp"
+      class="glightbox"
+      data-glightbox="title: Qurrito Deluxe (380gr); description: Price: 150 CZK -------- Ingredients: 3x Chicken Strips, Grated Edam Cheese, Grated Cheddar, Cheddar Tortilla, Fries, Red Onion, BBQ and Cheddar Sauce"
+    >
+      <img
+        class="img-box48"
+        src="./images/qurdel.webp"
+        alt="qurrito deluxe"
+        loading="lazy"
+      />
+    </a>
+  </div>
+</div>
+
+<div class="Salads" id="Salads-list">
+  <div class="box49">
+    <a
+      href="./images/salatmix.jpeg"
+      class="glightbox"
+      data-glightbox="title: Mix Salad (250gr); description: Price: 90 CZK -------- Ingredients: Cabbage, Iceberg Lettuce, Tomatoes, Cucumbers, Cheese"
+    >
+      <img
+        class="img-box49"
+        src="./images/salatmix.jpeg"
+        alt="mixsalad"
+        loading="lazy"
+      />
+    </a>
+  </div>
+
+  <div class="box50">
+    <a
+      href="./images/kursalad.jpg"
+      class="glightbox"
+      data-glightbox="title: Chicken Salad (250gr); description: Price: 125 CZK -------- Ingredients: 2x Strips, Cabbage, Iceberg Lettuce, Tomatoes, Cucumbers, Cheese"
+    >
+      <img
+        class="img-box50"
+        src="./images/kursalad.jpg"
+        alt="kureci salad"
+        loading="lazy"
+      />
+    </a>
+  </div>
+
+  <div class="box51">
+    <a
+      href="./images/halloumisalad.avif"
+      class="glightbox"
+      data-glightbox="title: Chicken Salad (250gr); description: Price: 120 CZK -------- Ingredients: Cabbage, Iceberg Lettuce, Tomatoes, Cucumbers, Halloumi"
+    >
+      <img
+        class="img-box51"
+        src="./images/halloumisalad.avif"
+        alt="halloumi salad"
+        loading="lazy"
+      />
+    </a>
+  </div>
+</div>
+
+<div class="Grilledmeat" id="Grilled-list">
+  <div class="box52">
+    <a
+      href="./images/koftetalir.avif"
+      class="glightbox"
+      data-glightbox="title: Köfte on Plate; description: Price: 195 CZK -------- Ingredients: (600 grams) Beef Meatballs, Vegetables, Fries Or Rice, Sauce"
+    >
+      <img
+        class="img-box52"
+        src="./images/koftetalir.avif"
+        alt="kofte"
+        loading="lazy"
+      />
+    </a>
+  </div>
+
+  <div class="box53">
+    <a
+      href="./images/koftetort.avif"
+      class="glightbox"
+      data-glightbox="Köfte in Tortilla; description: Price: 175 CZK -------- Ingredients: (450 grams) Beef Meatballs, Vegetables, Sauce"
+    >
+      <img
+        class="img-box53"
+        src="./images/koftetort.avif"
+        alt="kofte"
+        loading="lazy"
+      />
+    </a>
+  </div>
+
+  <div class="box54">
+    <a
+      href="./images/koftechleb.avif"
+      class="glightbox"
+      data-glightbox="title: Köfte in Bread; description: Price: 175 CZK -------- Ingredients: (450 grams) Beef Meatballs, Vegetables, Sauce"
+    >
+      <img
+        class="img-box54"
+        src="./images/koftechleb.avif"
+        alt="kofte"
+        loading="lazy"
+      />
+    </a>
+  </div>
+</div>
+
+<div class="Vegeterian" id="Vegeterian-list">
+  <div class="box55">
+    <a
+      href="./images/falafeltort.avif"
+      class="glightbox"
+      data-glightbox="title: Falafel in Tortilla (400gr); description: Price: 145 CZK -------- Ingredients:  4x Falafel Balls, Vegetables And Sauce"
+    >
+      <img
+        class="img-box55"
+        src="./images/falafeltort.avif"
+        alt="falafel"
+        loading="lazy"
+      />
+    </a>
+  </div>
+
+  <div class="box56">
+    <a
+      href="./images/falafbread.jpg"
+      class="glightbox"
+      data-glightbox="title: Falafel in Bread (350gr); description: Price: 140 CZK -------- Ingredients:  4x Falafel Balls, Vegetables And Sauce"
+    >
+      <img
+        class="img-box56"
+        src="./images/falafbread.jpg"
+        alt="falafel"
+        loading="lazy"
+      />
+    </a>
+  </div>
+
+  <div class="box57">
+    <a
+      href="./images/halltort.avif"
+      class="glightbox"
+      data-glightbox="title: Halloumi in Tortilla (400gr); description: Price: 145 CZK -------- Ingredients:  Halloumi, Vegetables And Sauce"
+    >
+      <img
+        class="img-box57"
+        src="./images/halltort.avif"
+        alt="halloumi"
+        loading="lazy"
+      />
+    </a>
+  </div>
+</div>
+
+<div class="Vegeterian">
+  <div class="box58">
+    <a
+      href="./images/hallchleb.avif"
+      class="glightbox"
+      data-glightbox="title: Halloumi in Bread (350gr); description: Price: 140 CZK -------- Ingredients:  Halloumi, Vegetables And Sauce"
+    >
+      <img
+        class="img-box58"
+        src="./images/hallchleb.avif"
+        alt="halloumi"
+        loading="lazy"
+      />
+    </a>
+  </div>
+
+  <div class="box59">
+    <a
+      href="./images/tortvege.avif"
+      class="glightbox"
+      data-glightbox="title: Vegeterian Tortilla (350gr); description: Price: 110 CZK -------- Ingredients: Vegetables And Sauce"
+    >
+      <img
+        class="img-box59"
+        src="./images/tortvege.avif"
+        alt="vege"
+        loading="lazy"
+      />
+    </a>
+  </div>
+
+  <div class="box60">
+    <a
+      href="./images/vegetortcheese.webp"
+      class="glightbox"
+      data-glightbox="title: Vegeterian Tortilla with Cheese (370gr); description: Price: 120 CZK -------- Ingredients: Vegetables, Cheese And Sauce"
+    >
+      <img
+        class="img-box60"
+        src="./images/vegetortcheese.webp"
+        alt="vege"
+        loading="lazy"
+      />
+    </a>
+  </div>
+</div>
+
+<div class="Kidsmenu" id="Kidsmenu-list">
+  <div class="box61">
+    <a
+      href="./images/tortkids.avif"
+      class="glightbox"
+      data-glightbox="title: Mini Tortilla Menu; description: Price: 150 CZK  -------- Ingredients: Tortilla + Fries + Juice"
+    >
+      <img
+        class="img-box61"
+        src="./images/tortkids.avif"
+        alt="tortkids"
+        loading="lazy"
+      />
+    </a>
+  </div>
+
+  <div class="box62">
+    <a
+      href="./images/fries.avif"
+      class="glightbox"
+      data-glightbox="title: Fries; description: Price: 60 CZK"
+    >
+      <img
+        class="img-box62"
+        src="./images/fries.avif"
+        alt="fries"
+        loading="lazy"
+      />
+    </a>
+  </div>
+
+  <div class="box63">
+    <a
+      href="./images/rizekkids.avif"
+      class="glightbox"
+      data-glightbox="title: Chicken wth Fries + Juice; description: Price: 150 CZK  -------- Ingredients: 2x Chicken Schnitzels, Fries, Sauce and Juice."
+    >
+      <img
+        class="img-box63"
+        src="./images/rizekkids.avif"
+        alt="rizekkids"
+        loading="lazy"
+      />
+    </a>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="aboutus" id="aboutus">
+  <h2 class="h2about">About Us</h2>
+</div>
+
+<div class="paboutus">
+  <p class="pabout">
+    <strong class="strabout">IST FOOD</strong> was founded by two friends who shared a passion for great food and a dream of creating something special together. Our journey began in <strong class="strabout">2023</strong> in Králův Dvůr, where we opened our first small place focused mainly on delicious, freshly prepared kebabs. From the very beginning, our goal was simple — serve quality food, use <strong class="strabout">fresh ingredients</strong>, and give every customer a <strong class="strabout">great experience</strong>.</br></br>
+
+    Thanks to the amazing support from our customers, <strong class="strabout">IST FOOD</strong> quickly became a local favorite. By 2025, we expanded and opened two more branches, introducing a new concept that combines <strong class="strabout">pizza, burgers, and kebabs</strong> in one place. This concept allowed us to offer a wider variety of flavors while still keeping the quality and authenticity that our guests love.</br></br>
+
+    Today, we are proud to maintain an <strong class="strabout">average rating of 4.7 stars</strong> across all our branches, reflecting the trust and satisfaction of our customers. In February 2026, we opened our newest branch in <strong class="strabout">Hostivice</strong>, closer to Prague, bringing our concept even closer to the capital.</br></br>
+
+    This location follows our popular <strong class="strabout">pizza, burger, and kebab</strong> concept, while also offering <strong class="strabout">beer, cocktails, and delicious desserts</strong> for an even better dining experience.</br></br>
+
+    At <strong class="strabout">IST FOOD</strong>, we believe in doing things our own way — <strong class="strabout">Not the same as others</strong>. Every meal we serve represents our passion, dedication, and love for great food shared with great people.</br></br>
+  </p>
+</div>
+</main>
+
+<footer class="footer">
+
+  <h2 class="h2foot"> How To Find Us</h2>
+
+
+               <div class="Footercontact">
+                <div class="contact1" >
+                  <ul class="contact01"> 
+                    <li>Call: </br> +420774524554</a></li>
+                    <li>Email us: </br> istfoodkebab@gmail.com</a></li>
+                    </ul>
               </div>
 
-              <div class="box2">
-                <a
-                  href="./images/margarita.avif"
-                  class="glightbox"
-                  data-glightbox="title: Pizza MARGHERITA; description:Size: 32cm = 160 CZK / Size: 45cm = 260 CZK -------- Ingredients: Tomato Base, Mozzarella, Fresh Basil"
-                >
-                  <img
-                    class="img-box2"
-                    src="./images/margarita.avif"
-                    alt="Pizza MARGHERITA"
-                  />
-                </a>
+               <div class="contact2">
+                  <div><a href="https://www.instagram.com/ist.food.kebab/" target="_blank"><img class="footerimg" src="./images/insta.webp" alt="instagram"></a>
+                  <span class="delivery-name"></span> </div>
+          <div ><a href="https://www.instagram.com/ist.food.kebab/" target="_blank"><img class="footerimg" src="./images/facebook.webp" alt="facebook"></a>
+                  <span class="delivery-name"></span> </div>
               </div>
 
-              <div class="box3">
-                <a
-                  href="./images/sampinionpizza.avif"
-                  class="glightbox"
-                  data-glightbox="title: Pizza SAMPINION; description:Size: 32cm = 185 CZK / Size: 45cm = 285 CZK -------- Ingredients: Tomato Base, Mozzarella, Mushrooms, Oregano, Chicken Ham, Arugula "
-                >
-                  <img
-                    class="img-box3"
-                    src="./images/sampinionpizza.avif"
-                    alt="Pizza Sampinion"
-                  />
-                </a>
+               <div class="contact2">
+                   <ul >
+                    <li>Plzeňská 59, Králův Dvůr </li> 
+                    <li>Plzeňská 67, Králův Dvůr </li> 
+                    <li>Plzeňská 341/52, Beroun</li> 
+                    <li>Husovo nám. 10, Hostivice</li> 
+                    </ul>
+              </div>
               </div>
 
-              <div class="box4">
-                <a
-                  href="./images/cinquepizza.avif"
-                  class="glightbox"
-                  data-glightbox="title: Pizza CINQUE; description:Size: 32cm = 195 CZK / Size: 45cm = 295 CZK -------- Ingredients: Cream Base, Mozzarella, Niva, Grana Padano, Cheddar, Hermelín">
-
-              
-                  <img
-                    class="img-box4"
-                    src="./images/cinquepizza.avif"
-                    alt="Pizza Cinque"
-                  />
-                </a>
-              </div>
-            </div>
-
-            <div class="Pizzas">
-              <div class="box5">
-                <a
-                  href="./images/vegetpizza.avif"
-                  class="glightbox"
-                  data-glightbox="title: Pizza VEGETERIANA; description:Size: 32cm = 180 CZK / Size: 45cm = 280 CZK -------- Ingredients: Tomato Base, Mozzarella, Bell Pepper, Olives, Mushrooms, Cherry Tomatoes, Red Onion, Oregano"
-                >
-                  <img
-                    class="img-box5"
-                    src="./images/vegetpizza.avif"
-                    alt="Pizza Vegeterian"
-                  />
-                </a>
-              </div>
-
-              <div class="box6">
-                <a
-                  href="./images/chickendeluxe.avif"
-                  class="glightbox"
-                  data-glightbox="title: Pizza CHICKEN DELUXE; description:Size: 32cm = 190 CZK / Size: 45cm = 290 CZK -------- Ingredients: Tomato Base, Mozzarella, Cheddar, Chicken, Olives, Red Onion, Mushrooms, Oregano"
-                >
-                  <img
-                    class="img-box6"
-                    src="./images/chickendeluxe.avif"
-                    alt="Pizza Chicken Deluxe"
-                  />
-                </a>
-              </div>
-
-              <div class="box7">
-                <a
-                  href="./images/polopizza.avif"
-                  class="glightbox"
-                  data-glightbox="title: Pizza POLLO; description:Size: 32cm = 190 CZK / Size: 45cm = 290 CZK -------- Ingredients: Tomato Base, Mozzarella, Chicken, Spinach, Tomato, Corn"
-                >
-                  <img
-                    class="img-box7"
-                    src="./images/polopizza.avif"
-                    alt="Pizza Pollo"
-                  />
-                </a>
-              </div>
-
-              <div class="box8">
-                <a
-                  href="./images/bbqpizza.avif"
-                  class="glightbox"
-                  data-glightbox="title: Pizza BBQ; description:Size: 32cm = 180 CZK / Size: 45cm = 280 CZK -------- Ingredients: Tomato Base, Mozzarella, Chicken, Red Onion, BBQ Sauce">
-                  <img
-                    class="img-box8"
-                    src="./images/bbqpizza.avif"
-                    alt="Pizza BQQ"
-                  />
-                </a>
-              </div>
-            </div>
-
-
-            <div class="Pizzas">
-              <div class="box9">
-                <a
-                  href="./images/Donerpizza.avif"
-                  class="glightbox"
-                  data-glightbox="title: Pizza DONER; description: Size: 32cm = 195 CZK / Size: 45cm = 295 CZK -------- Ingredients: Tomato Base, Mozzarella, Chicken Kebab, Red Onion, Olives, Bell Pepper, Egg">
             
-                  <img
-                    class="img-box9"
-                    src="./images/Donerpizza.avif"
-                    alt="Pizza Doner"
-                  />
-                </a>
-              </div>
+</footer>
 
-              <div class="box10">
-                <a
-                  href="./images/BALKANRAJPIZZA.avif"
-                  class="glightbox"
-                  data-glightbox="title: Pizza BALKANSKY RAJ; description: Size: 32cm = 185 CZK / Size: 45cm = 285 CZK -------- Ingredients: Tomato Base, Mozzarella, Balkan Cheese, Chili Peppers, Bell Pepper, Olives, Pastrami, Salami, Turkish Sausage, Oregano"
-                >
-                  <img
-                    class="img-box10"
-                    src="./images/BALKANRAJPIZZA.avif"
-                    alt="Pizza BALKANRAJ"
-                  />
-                </a>
-              </div>
-
-              <div class="box11">
-                <a
-                  href="./images/DIAVOLA.avif"
-                  class="glightbox"
-                  data-glightbox="title: Pizza DIAVOLA; description: Size: 32cm = 190 CZK / Size: 45cm = 290 CZK -------- Ingredients: Tomato Base, Mozzarella, Chorizo Sausage, Chili Peppers, Red Onion, Jalapeños"
-                >
-                  <img
-                    class="img-box11"
-                    src="./images/DIAVOLA.avif"
-                    alt="Pizza DIAVOLA"
-                  />
-                </a>
-              </div>
-
-              <div class="box12">
-                <a
-                  href="./images/SPENATOVA.avif"
-                  class="glightbox"
-                  data-glightbox="title: Pizza SPENATOVA; description: Size: 32cm = 180 CZK / Size: 45cm = 280 CZK -------- Ingredients: Cream Base, Mozzarella, Niva, Spinach Pesto"
-                >
-                  <img
-                    class="img-box12"
-                    src="./images/SPENATOVA.avif"
-                    alt="Pizza SPENATOVA"
-                  />
-                </a>
-              </div>
-            </div>
-            
-
-            <div class="Pizzas">
-              <div class="box13">
-                <a
-                  href="./images/ISTPIZZA.avif"
-                  class="glightbox"
-                  data-glightbox="title: Pizza IST; description: Size: 32cm = 185 CZK / Size: 45cm = 285 CZK -------- Ingredients: Tomato Base, Mozzarella, Corn, Turkish Sausage, Olives, Red Onion"
-                >
-                  <img
-                    class="img-box13"
-                    src="./images/ISTPIZZA.avif"
-                    alt="Pizza IST"
-                  />
-                </a>
-              </div>
-
-              <div class="box14">
-                <a
-                  href="./images/tonno.avif"
-                  class="glightbox"
-                  data-glightbox="title: Pizza TONNO; description: Size: 32cm = 185 CZK / Size: 45cm = 285 CZK -------- Ingredients: Tomato Base, Mozzarella, Red Onion, Tonno fish, Olives, Corn"
-                >
-                  <img
-                    class="img-box14"
-                    src="./images/tonno.avif"
-                    alt="Pizza TONNO"
-                  />
-                </a>
-              </div>
-
-              <div class="box15">
-                <a
-                  href="./images/Mexicano.avif"
-                  class="glightbox"
-                  data-glightbox="title: Pizza MEXICANO; description: Size: 32cm = 190 CZK / Size: 45cm = 290 CZK -------- Ingredients: Tomato Base, Mozzarella, Cheddar, Chorizo Sausage, Corn, Beans, Red Onion, Tomatoes, Jalapeños"
-                >
-                  <img
-                    class="img-box15"
-                    src="./images/Mexicano.avif"
-                    alt="Pizza MEXICANO"
-                  />
-                </a>
-              </div>
-
-              <div class="box16">
-                <a
-                  href="./images/PASTRAMI.avif"
-                  class="glightbox"
-                  data-glightbox="title: Pizza PASTRAMI; description: Size: 32cm = 190 CZK / Size: 45cm = 290 CZK -------- Ingredients: Cream Base, Mozzarella, Cheddar, Pickles, Pastrami, Caramelized Onion"
-                >
-                  <img
-                    class="img-box16"
-                    src="./images/PASTRAMI.avif"
-                    alt="Pizza PASTRAMI"
-                  />
-                </a>
-              </div>
-            </div>
-
-               <div class="Burger" id="Burger-list">
-              <div class="box17">
-                <a
-                  href="./images/bbgburger.avif"
-                  class="glightbox"
-                  data-glightbox="title: BBQ Burger; description: Price: 195 CZK / Menu (fries+drink): 255 CZK -------- Ingredients: (350 grams) beef, Lollo Rosso salad, cheddar, pickled cucumber, onion rings, arugula, red onion, sauce"
-
-                >
-                  <img
-                    class="img-box17"
-                    src="./images/bbgburger.avif"
-                    alt="bbgburger"
-                  />
-                </a>
-              </div>
-
-              <div class="box18">
-                <a
-                  href="./images/cheeseburger.avif"
-                  class="glightbox"
-                  data-glightbox="title: Cheeseburger; description: Price: 185 CZK / Menu (fries+drink): 245 CZK -------- Ingredients: (350 grams) beef, Lollo Rosso salad, cheddar, tomato, pickle, caramelized onion, roasted onion, sauce"
-                >
-                  <img
-                    class="img-box18"
-                    src="./images/cheeseburger.avif"
-                    alt="cheeseburger"
-                  />
-                </a>
-              </div>
-
-              <div class="box19">
-                <a
-                  href="./images/samuraiburger.avif"
-                  class="glightbox"
-                  data-glightbox= "title: Samurai Burger; description: Price: 190 CZK / Menu (fries+drink): 250 CZK -------- Ingredients: (350 grams) beef, Lollo Rosso salad, cheddar, tomato, onion rings, jalapeños, red onion, sauce"
-                >
-                  <img
-                    class="img-box19"
-                    src="./images/samuraiburger.avif"
-                    alt="Samurai burger"
-                  />
-                </a>
-              </div>
-              </div>
-
-              <div class="Burger" id="Burger-list">
-              <div class="box20">
-                <a
-                  href="./images/chickenburger.avif"
-                  class="glightbox"
-                  data-glightbox="title: Chicken Burger; description: Price: 170 CZK / Menu (fries+drink): 230 CZK -------- Ingredients: (300 grams) chicken fillet, Lollo Rosso salad, pickled cucumber, red onion, sauce"
-                >
-                  <img
-                    class="img-box20"
-                    src="./images/chickenburger.avif"
-                    alt="chickenburger"
-                  />
-                </a>
-              </div>
-            
-
-              <div class="box21">
-                <a
-                  href="./images/zampburger.avif"
-                  class="glightbox"
-                  data-glightbox="title: Zamp Burger; description: Price: 195 CZK / Menu (fries+drink): 255 CZK -------- Ingredients: (350 grams) beef, Lollo Rosso salad, cheddar, pickled cucumber, onion rings, zampinion, red onion, sauce"
-
-                >
-                  <img
-                    class="img-box21"
-                    src="./images/zampburger.avif"
-                    alt="zampburger"
-                  />
-                </a>
-              </div>
-
-              <div class="box22">
-                <a
-                  href="./images/bluecheeseburger.avif"
-                  class="glightbox"
-                  data-glightbox="title: Cheeseburger; description: Price: 195 CZK / Menu (fries+drink): 255 CZK -------- Ingredients: (350 grams) beef, Lollo Rosso salad, niva, tomato, pickle, caramelized onion, roasted onion, sauce"
-                >
-                  <img
-                    class="img-box22"
-                    src="./images/bluecheeseburger.avif"
-                    alt="bluecheeseburger"
-                  />
-                </a>
-              </div>
-            </div>
-
-
-
-              <div class="Kebab" id="Kebab-list">
-
-              <div class="box23">
-                <a
-                  href="./images/chleba.avif"
-                  class="glightbox"
-                  data-glightbox="title: Kebab in Bread; description: Price - 400gr: 140 CZK / 550gr: 155 CZK -------- Ingredients: Meat, Vegetables and Sauce"
-                >
-                  <img
-                    class="img-box23"
-                    src="./images/chleba.avif"
-                    alt="chleba"
-                  />
-                </a>
-              </div>
-            
-
-              <div class="box24">
-                <a
-                  href="./images/chlebapendir.avif"
-                  class="glightbox"
-                  data-glightbox="title: Kebab in Bread with Cheese; description: Price - 420gr: 155 CZK / 570gr: 170 CZK -------- Ingredients: Meat, Cheese, Vegetables and Sauce"
-
-                >
-                  <img
-                    class="img-box24"
-                    src="./images/chlebapendir.avif"
-                    alt="chlebapendir.avif"
-                  />
-                </a>
-              </div>
-
-              <div class="box25">
-                <a
-                  href="./images/chlebaspecial.avif"
-                  class="glightbox"
-                  data-glightbox="title: Special Kebab in Bread; description: Price - 350gr: 180 CZK -------- Ingredients: Meat and Sauce"
-                >
-                  <img
-                    class="img-box25"
-                    src="./images/chlebaspecial.avif"
-                    alt="chlebaspecial"
-                  />
-                </a>
-              </div>
-
-
-              <div class="box26">
-                <a
-                  href="./images/tortilla.avif"
-                  class="glightbox"
-                  data-glightbox="title: Kebab in Tortilla ; description: Price - 450gr: 145 CZK / 600gr: 170 CZK -------- Ingredients: Meat, Vegetables and Sauce"
-
-                >
-                  <img
-                    class="img-box26"
-                    src="./images/tortilla.avif"
-                    alt="Tortilla"
-                  />
-                </a>
-              </div>
-              </div>
-
-              <div class="Kebab" id="Kebab-list">
-
-              <div class="box27">
-                <a
-                  href="./images/tortillapendir.avif"
-                  class="glightbox"
-                  data-glightbox="title: Kebab in Tortilla with Cheese ; description: Price - 470gr: 160 CZK / 620gr: 180 CZK -------- Ingredients: Meat, Cheese, Vegetables and Sauce">
-                  <img
-                    class="img-box27"
-                    src="./images/tortillapendir.avif"
-                    alt="tortillapendir"
-                  />
-                </a>
-              </div>
-            
-
-              <div class="box28">
-                <a
-                  href="./images/tortillaherm.avif"
-                  class="glightbox"
-                  data-glightbox="title: Kebab in Tortilla with Hermelin ; description: Price - 550gr: 180 CZK -------- Ingredients: Meat, Hermelin, Vegetables and Sauce">
-                
-                  <img
-                    class="img-box28"
-                    src="./images/tortillaherm.avif"
-                    alt="tortillaherm"
-                  />
-                </a>
-              </div>
-
-              <div class="box29">
-                <a
-                  href="./images/tortspec.avif"
-                  class="glightbox"
-                  data-glightbox="title: Special Kebab in Tortilla ; description: Price - 450gr: 190 CZK -------- Ingredients: Meat and Sauce"
-                >
-                  <img
-                    class="img-box29"
-                    src="./images/tortspec.avif"
-                    alt="tortspec"
-                  />
-                </a>
-              </div>
-
-
-              <div class="box30">
-                <a
-                  href="./images/tortillastrips.avif"
-                  class="glightbox"
-                  data-glightbox="title: Strips in Tortilla; description: Price - 500gr: 145 CZK -------- Ingredients: 3x Strips, Vegetables and Sauce"
-
-                >
-                  <img
-                    class="img-box30"
-                    src="./images/tortillastrips.avif"
-                    alt="tortillastrips"
-                  />
-                </a>
-              </div>
-              </div>
-              
-              <div class="Kebab" id="Kebab-list">
-
-              <div class="box31">
-                <a
-                  href="./images/talirkebab.avif"
-                  class="glightbox"
-                  data-glightbox="title: Kebab in Plate ; description: Price - 400gr: 150 CZK / 550gr: 175 CZK -------- Ingredients: Meat, Vegetables, Sauce and Bread/Fries/Rice"
-                >
-                  <img
-                    class="img-box31"
-                    src="./images/talirkebab.avif"
-                    alt="Talirkebab"
-                  />
-                </a>
-              </div>
-            
-
-              <div class="box32">
-                <a
-                  href="./images/stripstalir.avif"
-                  class="glightbox"
-                  data-glightbox="title: Strips in Plate ; description: Price - 400gr: 150 CZK / 550gr: 175 CZK -------- Ingredients: 4x Strips, Vegetables, Sauce and Bread/Fries/Rice"
-                ><img
-                    class="img-box32"
-                    src="./images/stripstalir.avif"
-                    alt="stripstalir"
-                  />
-                </a>
-              </div>
-
-              <div class="box33">
-                <a
-                  href="./images/kebabbox.avif"
-                  class="glightbox"
-                  data-glightbox="title: Kebab Box; description: Price - 350gr: 115 CZK / 450gr: 140 CZK -------- Ingredients: Meat, Vegetables, Sauce and Fries"
-                >
-                  <img
-                    class="img-box33"
-                    src="./images/kebabbox.avif"
-                    alt="kebabbox"
-                  />
-                </a>
-              </div>
-
-
-              <div class="box34">
-                <a
-                  href="./images/boxspecial.avif"
-                  class="glightbox"
-                  data-glightbox="title: Special Box Kebab; description: Price - 300gr: 180 CZK -------- Ingredients: Meat and Sauce"
-                >
-                  <img
-                    class="img-box34"
-                    src="./images/boxspecial.avif"
-                    alt="boxspecial"
-                  />
-                </a>
-              </div>
-              </div>
-
-              <div class="Drinks" id="Drinks-list">
-
-              <div class="box35">
-                <a
-                  href="./images/cola.avif"
-                  class="glightbox"
-                  data-glightbox="title: Cola/Cola Zero 0.5l ; description: Price - 45 CZK">
-                  <img
-                    class="img-box35"
-                    src="./images/cola.avif"
-                    alt="Cola"
-                  />
-                </a>
-              </div>
-            
-
-              <div class="box36">
-                <a
-                  href="./images/colabank.avif"
-                  class="glightbox"
-                  data-glightbox="title: Cola/Cola Zero 0.33l ; description: Price - 35 CZK">
-                <img
-                    class="img-box36"
-                    src="./images/colabank.avif"
-                    alt="stripstalir"
-                  />
-                </a>
-              </div>
-
-              <div class="box37">
-                <a
-                  href="./images/fantaexotic.avif"
-                  class="glightbox"
-                  data-glightbox="title: Fanta Exotic 0.33l ; description: Price - 35 CZK"
-                >
-                  <img
-                    class="img-box37"
-                    src="./images/fantaexotic.avif"
-                    alt="fantaexotic"
-                  />
-                </a>
-              </div>
-
-
-              <div class="box38">
-                <a
-                  href="./images/fanta05.avif"
-                  class="glightbox"
-                  data-glightbox="title: Fanta 0.5l ; description: Price - 45 CZK"
-                >
-                  <img
-                    class="img-box38"
-                    src="./images/fanta05.avif"
-                    alt="Fanta"
-                  />
-                </a>
-              </div>
-              </div>
-
-               <div class="Drinks" id="Drinks-list">
-
-              <div class="box39">
-                <a
-                  href="./images/water.avif"
-                  class="glightbox"
-                  data-glightbox="title: Normal/Sparkling Water ; description: Price - 25 CZK">                
-                  <img
-                    class="img-box39"
-                    src="./images/water.avif"
-                    alt="water"
-                  />
-                </a>
-              </div>
-            
-
-              <div class="box40">
-                <a
-                  href="./images/multivitamin.avif"
-                  class="glightbox"
-                  data-glightbox="title: Strawberr/Multivitamin Cappy; description: Price - 45 CZK"
-                ><img
-                    class="img-box40"
-                    src="./images/multivitamin.avif"
-                    alt="multivitamin"
-                  />
-                </a>
-              </div>
-
-              <div class="box41">
-                <a
-                  href="./images/monster.avif"
-                  class="glightbox"
-                  data-glightbox="title: Lewis Hamilton, Zero, Mango 0.5l; description: Price - 55 CZK">
-                  <img
-                    class="img-box41"
-                    src="./images/monster.avif"
-                    alt="kebabbox"
-                  />
-                </a>
-              </div>
-
-
-              <div class="box42">
-                <a
-                  href="./images/beer.avif"
-                  class="glightbox"
-                  data-glightbox="title: Beer - Kozel, Plsner 0.3l / 0.5l; description: Price - 55/75 CZK"
-                >
-                  <img
-                    class="img-box42"
-                    src="./images/beer.avif"
-                    alt="boxspecial"
-                  />
-                </a>
-              </div>
-              </div>
-
-               <div class="Desserts" id="Dessers-list">
-
-              <div class="box43">
-                <a
-                  href="./images/baklava1.avif"
-                  class="glightbox"
-                  data-glightbox="title: Pistachio Baklava; description: Price: 40 CZK / 1 piece (40gr) -------- Ingredients: Baklava is made from very thin sheets of filo pastry, usually filled with various kinds of nuts and soaked in a sweet honey syrup."
-                >
-                  <img
-                    class="img-box43"
-                    src="./images/baklava1.avif"
-                    alt="baklava"
-                  />
-                </a>
-              </div>
-
-
-              <div class="box44">
-                <a
-                  href="./images/baklava3.avif"
-                  class="glightbox"
-                  data-glightbox="title: Extra Pistachio Baklava; description: Price: 50 CZK / 1 piece. (45gr) -------- Ingredients: Baklava is made from very thin sheets of filo pastry, usually filled with various kinds of nuts and soaked in a sweet honey syrup."
-              
-                >
-                  <img
-                    class="img-box44"
-                    src="./images/baklava3.avif"
-                    alt="baklava"
-                  />
-                </a>
-              </div>
-
-               <div class="box45">
-                <a
-                  href="./images/baklava2.avif"
-                  class="glightbox"
-                  data-glightbox="title: Sunburst Baklava; description: Price: 100 CZK / 1 piece. (80gr) -------- Ingredients: Baklava is made from very thin sheets of filo pastry, usually filled with various kinds of nuts and soaked in a sweet honey syrup."
-        
-                >
-                  <img
-                    class="img-box45"
-                    src="./images/baklava2.avif"
-                    alt="baklava"
-                  />
-                </a>
-              </div>
-
-              </div>
-            
-            <div class="Qurrito" id="Qurrito-list">
-
-              <div class="box46">
-                <a
-                  href="./images/qurrito.avif"
-                  class="glightbox"
-                  data-glightbox="title: Pistachio Baklava; description: Price: 40 CZK / 1 piece (40gr) -------- Ingredients: Baklava is made from very thin sheets of filo pastry, usually filled with various kinds of nuts and soaked in a sweet honey syrup."
-                >
-                  <img
-                    class="img-box46"
-                    src="./images/qurrito.avif"
-                    alt="qurrito"
-                  />
-                </a>
-              </div>
-
-
-              <div class="box47">
-                <a
-                  href="./images/qurrito-menu.png"
-                  class="glightbox"
-                  data-glightbox="title: Extra Pistachio Baklava; description: Price: 50 CZK / 1 piece. (45gr) -------- Ingredients: Baklava is made from very thin sheets of filo pastry, usually filled with various kinds of nuts and soaked in a sweet honey syrup."
-              
-                >
-                  <img
-                    class="img-box47"
-                    src="./images/qurrito-menu.png"
-                    alt="qurrito menu"
-                  />
-                </a>
-              </div>
-
-               <div class="box48">
-                <a
-                  href="./images/qurdel.webp"
-                  class="glightbox"
-                  data-glightbox="title: Sunburst Baklava; description: Price: 100 CZK / 1 piece. (80gr) -------- Ingredients: Baklava is made from very thin sheets of filo pastry, usually filled with various kinds of nuts and soaked in a sweet honey syrup."
-        
-                >
-                  <img
-                    class="img-box48"
-                    src="./images/qurdel.webp"
-                    alt="qurrito deluxe"
-                  />
-                </a>
-              </div>
-
-              </div>
-
-          </div>
-      
-      
-      <div class="aboutus" id="aboutus">
-      <h2 class="h2about">About Us</h2>
-     </div>
-     <div class="paboutus">
-      <p class="pabout"> <strong class="strabout">IST FOOD</strong> was founded by two friends who shared a passion for great food and a dream of creating something special together. Our journey began in <strong class="strabout">2023</strong> in Králův Dvůr, where we opened our first small place focused mainly on delicious, freshly prepared kebabs. From the very beginning, our goal was simple — serve quality food, use <strong class="strabout">fresh ingredients</strong>, and give every customer a <strong class="strabout">great experience</strong>.</br></br>
-
-Thanks to the amazing support from our customers, <strong class="strabout">IST FOOD</strong> quickly became a local favorite. By 2025, we expanded and opened two more branches, introducing a new concept that combines <strong class="strabout">pizza, burgers, and kebabs</strong>  in one place. This concept allowed us to offer a wider variety of flavors while still keeping the quality and authenticity that our guests love.</br></br>
-
-Today, we are proud to maintain an <strong class="strabout">average rating of 4.7 stars</strong> across all our branches, reflecting the trust and satisfaction of our customers. In February 2026, we opened our newest branch in <strong class="strabout">Hostivice</strong>, closer to Prague, bringing our concept even closer to the capital.</br></br>
-
-This location follows our popular <strong class="strabout">pizza, burger, and kebab</strong> concept, while also offering <strong class="strabout">beer, cocktails, and delicious desserts</strong> for an even better dining experience.</br></br>
-
-At <strong class="strabout">IST FOOD</strong>, we believe in doing things our own way — <strong class="strabout">Not the same as others</strong>. Every meal we serve represents our passion, dedication, and love for great food shared with great people.</br></br></p>
-     </div>
-    </main>
-
-
-    <script src="./node_modules/glightbox/dist/js/glightbox.min.js"></script>
+<script src="./node_modules/glightbox/dist/js/glightbox.min.js"></script>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     GLightbox({
@@ -901,6 +1168,8 @@ At <strong class="strabout">IST FOOD</strong>, we believe in doing things our ow
     });
   });
 </script>
+ <script src="./js/script.js"></script>
 
-  </body>
+ 
+</body>
 </html>

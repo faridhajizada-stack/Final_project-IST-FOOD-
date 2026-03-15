@@ -26,54 +26,60 @@
   </head>
 
 <body>
+<header class="header">
+  <a class="menu-links" href="index.html">
+    <img class="logo" src="./images/Logo.jpeg" alt="logo" />
+  </a>
 
-   <header class="header">
-      <a class="menu-links" href="index.html"
-        ><img class="logo" src="./images/Logo.jpeg" alt="logo"
-      /></a>
+  <nav class="nav-menu">
+    <ul class="menu">
+  <div class="menu-item-hours">
+    <span class="title">Opening hours:</span>
+    <span class="time"><strong class="stronghours">10:00 – 21:00</strong></span>
+  </div>
 
-      <nav class="nav-menu">
-        <ul class="menu">
-         
-          <li class="menu-item-hours">
-            <div>
-              <span class="title">Opening hours</span>
-              <span class="time"><strong class="stronghours"> 10:00 – 21:00 </strong></span>
-            </div>
-          </li>
-          <li class="menu-item">
-            <a class="menu-links" href="index.html#aboutus">About us</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-links" href="index.html#allmenu">Menu</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-links" href="offers.html#offers">Offers</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-links" href="contacts.html#delivery">Delivery</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-links" href="location.html">Location</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-links" href="contacts.html#contacts">Contact</a>
-          </li>
+   
+      <li class="menu-item">
+        <a class="menu-links" href="index.html#aboutus">About us</a>
+      </li>
+      <li class="menu-item">
+        <a class="menu-links" href="index.html#allmenu">Menu</a>
+      </li>
+      <li class="menu-item">
+        <a class="menu-links" href="offers.html#offers">Offers</a>
+      </li>
+      <li class="menu-item">
+        <a class="menu-links" href="contacts.html">Delivery</a>
+      </li>
+      <li class="menu-item">
+        <a class="menu-links" href="location.html">Location</a>
+      </li>
+      <li class="menu-item">
+        <a class="menu-links" href="contacts.html">Contact</a>
+      </li>
+      <li class="menu-item menu-item-btn">
+        <button data-label="Register" class="rainbow-hover">
+          <span class="sp"><a href="order.html">Order</a></span>
+        </button>
+      </li>
+    </ul>
+  </nav>
+</header>
 
-          <button data-label="Register" class="rainbow-hover">
-            <span class="sp"><a href="index.html">Back</a></span>
-          </button>
-        </ul>
-      </nav>
-    </header>
 
   <main class="mainorder">
 
 
 <h1 class="h1order">Make your order</h1>
 
+<button id="openFormBtn" class="buttonstart" type="button">Start</button>
+
+<div id="formModal" class="form-modal">
+  <div class="form-modal-content">
+    <button id="closeFormBtn" class="form-close" type="button">&times;</button>
+
+ 
 <div class="form">
-  <fieldset class="fieldsetform">
 <form class="formorder" action="https://formspree.io/f/mpqyrady" method="post">
 
 <div class="formdiv"><label>Your Name:
@@ -96,21 +102,142 @@
     <select id="foodopt" name="food" placeholder="Choose" multiple size="1" >
 
   <optgroup label="Burgers">
-    <option value="cheeseburger">Cheeseburger</option>
-    <option value="chicken-burger">Chicken Burger</option>
-    <option value="double-burger">Double Burger</option>
+    <option value="cheeseburger">Cheeseburger -- 185 CZK</option>
+    <option value="chicken-burger">Chicken Burger -- 170 CZK</option>
+    <option value="double-burger">BBQ Burger -- 195 CZK</option>
+       <option value="cheeseburger">Samurai Burger -- 190 CZK</option>
+    <option value="chicken-burger">Blue cheese Burger -- 195 CZK</option>
+    <option value="double-burger">Zamp Burger -- 195 CZK</option>
+    <option value="cheeseburger">Cheeseburger Menu -- 245 CZK</option>
+    <option value="chicken-burger">Chicken Burger Menu -- 230 CZK</option>
+    <option value="double-burger">BBQ Burger Menu -- 255 CZK</option>
+       <option value="cheeseburger">Samurai Burger Menu -- 250 CZK</option>
+    <option value="chicken-burger">Blue cheese Burger Menu -- 255 CZK</option>
+    <option value="double-burger">Zamp Burger Menu -- 255 CZK</option>
   </optgroup>
 
   <optgroup label="Pizza-32">
-    <option value="funghi">Pizza Funghi - 195 CZK</option>
-    <option value="margherita">Pizza Margherita - 160 CZK</option>
-    <option value="pepperoni">Pizza Pepperoni</option>
+<option value="pepperoni">Pizza PEPPERONI -- 180 CZK</option>
+<option value="margherita">Pizza MARGHERITA -- 160 CZK</option>
+<option value="sampinion">Pizza SAMPINION -- 185 CZK</option>
+<option value="cinque">Pizza CINQUE -- 195 CZK</option>
+<option value="vegeteriana">Pizza VEGETERIANA -- 180 CZK</option>
+<option value="chicken-deluxe">Pizza CHICKEN DELUXE -- 190 CZK</option>
+<option value="pollo">Pizza POLLO -- 190 CZK</option>
+<option value="bbq">Pizza BBQ -- 180 CZK</option>
+<option value="doner">Pizza DONER -- 195 CZK</option>
+<option value="balkansky-raj">Pizza BALKANSKY RAJ -- 185 CZK</option>
+<option value="diavola">Pizza DIAVOLA -- 190 CZK</option>
+<option value="spenatova">Pizza SPENATOVA -- 180 CZK</option>
+<option value="ist">Pizza IST -- 185 CZK</option>
+<option value="tonno">Pizza TONNO -- 185 CZK</option>
+<option value="mexicano">Pizza MEXICANO -- 190 CZK</option>
+<option value="pastrami">Pizza PASTRAMI -- 190 CZK</option>
   </optgroup>
 
-  <optgroup label="Kebab">
-    <option value="chicken-kebab">Chicken Kebab</option>
-    <option value="beef-kebab">Beef Kebab</option>
-  </optgroup>
+<optgroup label="Pizza-45">
+<option value="pepperoni45">Pizza PEPPERONI -- 280 CZK</option>
+<option value="margherita45">Pizza MARGHERITA -- 260 CZK</option>
+<option value="sampinion45">Pizza SAMPINION -- 285 CZK</option>
+<option value="cinque45">Pizza CINQUE -- 295 CZK</option>
+<option value="vegeteriana45">Pizza VEGETERIANA -- 280 CZK</option>
+<option value="chicken-deluxe45">Pizza CHICKEN DELUXE -- 290 CZK</option>
+<option value="pollo45">Pizza POLLO -- 290 CZK</option>
+<option value="bbq45">Pizza BBQ -- 280 CZK</option>
+<option value="doner45">Pizza DONER -- 295 CZK</option>
+<option value="balkansky-raj45">Pizza BALKANSKY RAJ -- 285 CZK</option>
+<option value="diavola45">Pizza DIAVOLA -- 290 CZK</option>
+<option value="spenatova45">Pizza SPENATOVA -- 280 CZK</option>
+<option value="ist45">Pizza IST -- 285 CZK</option>
+<option value="tonno45">Pizza TONNO -- 285 CZK</option>
+<option value="mexicano45">Pizza MEXICANO -- 290 CZK</option>
+<option value="pastrami45">Pizza PASTRAMI -- 290 CZK</option>
+</optgroup>
+
+<optgroup label="Kebab">
+<option value="kebab-bread400">Kebab In Bread 400g -- 140 CZK</option>
+<option value="kebab-bread550">Kebab In Bread 550g -- 155 CZK</option>
+
+<option value="kebab-bread-cheese420">Kebab In Bread With Cheese 420g -- 155 CZK</option>
+<option value="kebab-bread-cheese570">Kebab In Bread With Cheese 570g -- 170 CZK</option>
+
+<option value="kebab-bread-special350">Special Kebab In Bread 350g -- 180 CZK</option>
+
+<option value="kebab-tortilla450">Kebab In Tortilla 450g -- 145 CZK</option>
+<option value="kebab-tortilla600">Kebab In Tortilla 600g -- 170 CZK</option>
+
+<option value="kebab-tortilla-cheese470">Kebab In Tortilla With Cheese 470g -- 160 CZK</option>
+<option value="kebab-tortilla-cheese620">Kebab In Tortilla With Cheese 620g -- 180 CZK</option>
+
+<option value="kebab-tortilla-hermelin550">Kebab In Tortilla With Hermelin 550g -- 180 CZK</option>
+
+<option value="kebab-tortilla-special450">Special Kebab In Tortilla 450g -- 190 CZK</option>
+
+<option value="strips-tortilla500">Strips In Tortilla 500g -- 145 CZK</option>
+
+<option value="kebab-plate400">Kebab On Plate 400g -- 150 CZK</option>
+<option value="kebab-plate550">Kebab On Plate 550g -- 175 CZK</option>
+
+<option value="strips-plate400">Strips On Plate 400g -- 150 CZK</option>
+<option value="strips-plate550">Strips On Plate 550g -- 175 CZK</option>
+
+<option value="kebab-box350">Kebab Box 350g -- 115 CZK</option>
+<option value="kebab-box450">Kebab Box 450g -- 140 CZK</option>
+
+<option value="special-box300">Special Kebab Box 300g -- 180 CZK</option>
+</optgroup>
+
+<optgroup label="Qurrito">
+<option value="qurrito350">Qurrito 350g -- 150 CZK</option>
+<option value="qurrito-menu450">Qurrito Menu (Fries + Drink) 450g -- 190 CZK</option>
+<option value="qurrito-deluxe380">Qurrito Deluxe 380g -- 150 CZK</option>
+</optgroup>
+
+<optgroup label="Salads">
+<option value="mix-salad">Mix Salad 250g -- 90 CZK</option>
+<option value="chicken-salad">Chicken Strips Salad 250g -- 125 CZK</option>
+<option value="halloumi-salad">Halloumi Salad 250g -- 120 CZK</option>
+</optgroup>
+
+<optgroup label="Grilled Meat">
+<option value="kofte-plate600">Köfte On Plate 600g -- 195 CZK</option>
+<option value="kofte-tortilla450">Köfte In Tortilla 450g -- 175 CZK</option>
+<option value="kofte-bread450">Köfte In Bread 450g -- 175 CZK</option>
+</optgroup>
+
+<optgroup label="Vegetarian">
+<option value="falafel-tortilla400">Falafel In Tortilla 400g -- 145 CZK</option>
+<option value="falafel-bread350">Falafel In Bread 350g -- 140 CZK</option>
+<option value="halloumi-tortilla400">Halloumi In Tortilla 400g -- 145 CZK</option>
+<option value="halloumi-bread350">Halloumi In Bread 350g -- 140 CZK</option>
+<option value="vegetarian-tortilla350">Vegetarian Tortilla 350g -- 110 CZK</option>
+<option value="vegetarian-tortilla-cheese370">Vegetarian Tortilla With Cheese 370g -- 120 CZK</option>
+</optgroup>
+
+<optgroup label="Kids Menu">
+<option value="mini-tortilla-menu">Mini Tortilla Menu -- 150 CZK</option>
+<option value="fries">Fries -- 60 CZK</option>
+<option value="chicken-kids-menu">Chicken With Fries + Juice -- 150 CZK</option>
+</optgroup>
+
+<optgroup label="Drinks">
+<option value="cola05">Cola / Cola Zero 0.5L -- 45 CZK</option>
+<option value="cola033">Cola / Cola Zero 0.33L -- 35 CZK</option>
+<option value="fanta-exotic033">Fanta Exotic 0.33L -- 35 CZK</option>
+<option value="fanta05">Fanta 0.5L -- 45 CZK</option>
+<option value="water">Water Still / Sparkling -- 25 CZK</option>
+<option value="cappy">Cappy Strawberry / Multivitamin -- 45 CZK</option>
+<option value="monster">Monster Energy 0.5L -- 55 CZK</option>
+<option value="beer03">Beer Kozel / Pilsner 0.3L -- 55 CZK</option>
+<option value="beer05">Beer Kozel / Pilsner 0.5L -- 75 CZK</option>
+</optgroup>
+
+<optgroup label="Desserts">
+<option value="baklava-pistachio40">Pistachio Baklava -- 40 CZK</option>
+<option value="baklava-extra50">Extra Pistachio Baklava -- 50 CZK</option>
+<option value="baklava-sunburst100">Sunburst Baklava -- 100 CZK</option>
+</optgroup>
+
 
 </label></select></div>
 
@@ -140,77 +267,88 @@
 <input class="inputorder" type="checkbox" name="agreement" required value="agree"> 
 
 </br>
-<div class="formdiv"><button class="buttonorder"> Submit </button></div>
+<div class="formdiv"><button type="submit" class="buttonorder"> Submit </button></div>
 
-</fieldset>
 </form>
- </div>
 
+ </div>
+  </div>
+ </div>
+ 
 </main>
 
+<footer class="footer">
+
+  <h2 class="h2foot"> How To Find Us</h2>
 
 
-<script>
-  const input = document.getElementById("address");
-  const suggestions = document.getElementById("suggestions");
+               <div class="Footercontact">
+                <div class="contact1" >
+                  <ul class="contact01">
+                    <li>Call: </br> +420774524554</a></li>
+                    <li>Email us: </br> istfoodkebab@gmail.com</a></li>
+                    </ul>
+              </div>
 
-  suggestions.classList.add("hidden");
+               <div class="contact2">
+                  <div><a href="https://www.instagram.com/ist.food.kebab/" target="_blank"><img class="footerimg" src="./images/insta.webp" alt="instagram"></a>
+                  <span class="delivery-name"></span> </div>
+          <div ><a href="https://www.instagram.com/ist.food.kebab/" target="_blank"><img class="footerimg" src="./images/facebook.webp" alt="facebook"></a>
+                  <span class="delivery-name"></span> </div>
+              </div>
 
-  let debounceTimer;
+               <div class="contact2">
+                   <ul >
+                    <li>Plzeňská 59, Králův Dvůr </li> 
+                    <li>Plzeňská 67, Králův Dvůr </li> 
+                    <li>Plzeňská 341/52, Beroun</li> 
+                    <li>Husovo nám. 10, Hostivice</li> 
+                    </ul>
+              </div>
+              </div>
 
-  input.addEventListener("input", () => {
-    clearTimeout(debounceTimer);
+              </div>
+</footer>
 
-    const query = input.value.trim();
+  <script src="./js/script.js"></script>
 
-    if (query.length < 3) {
-      suggestions.innerHTML = "";
-      suggestions.classList.add("hidden");
-      return;
-    }
+   <script>
+  const hamburger = document.querySelector('.hamburger');
+  const menu = document.querySelector('.menu');
 
-    debounceTimer = setTimeout(async () => {
-      try {
-      const response = await fetch(
-  `https://nominatim.openstreetmap.org/search?format=json&addressdetails=1&limit=5&countrycodes=cz&accept-language=en&q=${encodeURIComponent(query)}`
-);
-        const data = await response.json();
+  if (hamburger && menu) {
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      menu.classList.toggle('active');
+      document.body.classList.toggle('menu-open');
+    });
 
-        suggestions.innerHTML = "";
+    document.querySelectorAll('.menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        menu.classList.remove('active');
+        document.body.classList.remove('menu-open');
+      });
+    });
 
-        if (!data.length) {
-          suggestions.innerHTML = `<div class="suggestion-item">No address found</div>`;
-          suggestions.classList.remove("hidden");
-          return;
-        }
-
-        data.forEach((place) => {
-          const div = document.createElement("div");
-          div.className = "suggestion-item";
-          div.textContent = place.display_name;
-
-          div.addEventListener("click", () => {
-            input.value = place.display_name;
-            suggestions.innerHTML = "";
-            suggestions.classList.add("hidden");
-          });
-
-          suggestions.appendChild(div);
-        });
-
-        suggestions.classList.remove("hidden");
-      } catch (error) {
-        suggestions.innerHTML = `<div class="suggestion-item">Error loading addresses</div>`;
-        suggestions.classList.remove("hidden");
+    document.addEventListener('click', (e) => {
+      const isClickInsideNav = e.target.closest('.nav-menu');
+      if (!isClickInsideNav && menu.classList.contains('active')) {
+        hamburger.classList.remove('active');
+        menu.classList.remove('active');
+        document.body.classList.remove('menu-open');
       }
-    }, 300);
-  });
+    });
 
-  document.addEventListener("click", (e) => {
-    if (!document.querySelector(".address-box").contains(e.target)) {
-      suggestions.classList.add("hidden");
-    }
-  });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        hamburger.classList.remove('active');
+        menu.classList.remove('active');
+        document.body.classList.remove('menu-open');
+      }
+    });
+  }
 </script>
+
 </body>
 </html>
